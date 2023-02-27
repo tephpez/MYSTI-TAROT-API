@@ -31,7 +31,10 @@ DRAW.IO - https://app.diagrams.net/?libs=general;flowchart#G1_Tejn8qEECQz9R0pQtd
 - REACT ROUTER LESSON - https://github.com/seir-123/u2_react_router_intro
 - SWAPI LAB - https://github.com/seir-123/u2_react_axios_lab
 - MOVIE MAPPING HW - https://github.com/seir-123/u2_hw_movie_mapping
-- CARD BACK IMAGES SOURCE- https://www.etsy.com/listing/1170879353/vintage-card-backs-tarot-card-backs-png?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=tarot+card+design&ref=sr_gallery-1-3&pro=1&organic_search_click=1
+
+- TAROT API - https://tarot-api.onrender.com/api/v1/cards
+- CARD BACK IMAGES SOURCE - https://www.etsy.com/listing/1170879353/vintage-card-backs-tarot-card-backs-png?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=tarot+card+design&ref=sr_gallery-1-3&pro=1&organic_search_click=1
+                          - https://cdn.shopify.com/s/files/1/0105/6172/products/TT_20Card_20Back_20-_20White_20_20Blue_500x.jpg?v=1624046140
 - CARD FRONT IMAGES SOURCE - https://luciellaes.itch.io/rider-waite-smith-tarot-cards-cc0
 - TAROT REFERENCE INFO - https://www.biddytarot.com/tarot-card-meanings/
 

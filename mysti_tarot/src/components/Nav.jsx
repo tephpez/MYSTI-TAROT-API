@@ -1,16 +1,22 @@
 import { Link } from 'react-router-dom'
 
+import Learn from './Learn'
+import About from './About'
 
 export default function Nav(){
     
     return(
-        <div id="nav">
-            <span>THIS IS THE NAVBAR</span>
-            <Link to="/Learn"><button>learn</button></Link>
-            <Link to="../App"><button>spreads</button></Link>
-            <Link to="/About"><button>about</button></Link>
+        <div id="navBar">
+            <div id="leftLinks">
+                <Link to="/Learn" element={<Learn/>}><button className="navButton" id="learnBtn">learn</button></Link>
+                <Link to="/"><button className="navButton" id="spreadsBtn">spreads</button></Link>
+            </div>
+            <span id="mysti">MYSTI</span>
+            <div id="rightLinks">
+              <Link to="/About"><button className="navButton" id="aboutBtn">about</button></Link>
+            </div>
         </div>
     )
 }
 
-// HOW DO I ROUTE SOMEONE BACK TO APP? LIKE HOME - APP.JS, I DON'T HAVE A SEPARATE HOME.JSX
+//////////////////////////////////////////////////////////////////////////////////////////////////////
