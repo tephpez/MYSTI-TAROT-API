@@ -5,9 +5,9 @@ Already have a deck? Use Mysti as a reference for your own spreads!
 
 # SCHEDULE, WIREFRAME & FLOW CHART
 
-TRELLO - https://trello.com/b/be3TXeY5/tarot-api
+TRELLO - https://trello.com/b/be3TXeY5/mysti-tarot
 
-FIGMA - https://www.figma.com/file/sbI42LWU50WIBn47HwjhJx/TAROT-API?node-id=0%3A1&t=NejjccnoggBxduku-0
+FIGMA - https://www.figma.com/file/sbI42LWU50WIBn47HwjhJx/MYSTI-TAROT?node-id=0%3A1&t=S7YuSVcuczGG16Oa-0
 
 DRAW.IO - https://app.diagrams.net/?libs=general;flowchart#G1_Tejn8qEECQz9R0pQtdVhpYEJnmMKd_0
 
