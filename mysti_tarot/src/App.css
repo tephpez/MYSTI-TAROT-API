@@ -41,7 +41,22 @@
 
   }
 
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
 
+}
+
+
+.card{
+  /* background-color: blanchedalmond;
+  border: 5px solid black; */
+  background:url(assets/CARD1.png);
+
+  margin:15px;
+  height: 66vh;
+  width: 17vw;
+}
 
 /*  COLOR PALETTE
 BLACK - 272928
