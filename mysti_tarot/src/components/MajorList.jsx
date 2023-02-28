@@ -13,24 +13,44 @@ console.log(props)
 if (props && props.majCard){
     return(
         
-       <div>
-    
-        <h1>MAJOR LIST</h1>
-         <div className="cardContainer">
+        <div>
+        <div id="titleSpacer"></div>
+
+ 
+        <div className="titleContainer">
+            <div className="titleText">
+                <h1>MAJOR ARCANA</h1>
+            </div>
+        </div>
+
+
+        <div id="resultsPageContainer">
             {
                 props.majCard.map((major, index) => (
                     major.type === "major" ?
-                    <div key={index} className="card" onClick={() => showMajor (index)}>
+
+                <div id="resultsCard">
+                    <div key={index} className="resultsContainer">
                         <h3 className="cardName">{major.name}</h3>
-                        
+                        <h3 id="upright">UPRIGHT</h3>
+                        <h3 className="uprightText">{major.meaning_up}</h3>
+                        <h3 id="reversed">REVERSED</h3>
+                        <h3 className="reversedText">{major.meaning_rev}</h3>
                     </div>
+
+                    <div className="seeFullContainer">
+                        <button id="seeFull" onClick={() => showMajor (index)}>SEE FULL DESCRIPTION</button>
+                    </div>
+
+                </div>
                 : null))
             }
          </div>
     
-         <div>
-             <Link to="/MinorLanding"><button>MINOR ARCANA</button></Link>
+         <div className="redirectContainer">
+             <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
          </div>
+
        </div> 
     )
 
@@ -42,23 +62,10 @@ if (props && props.majCard){
 }
 
 
+/////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
+/////  STYLE  /////////////////////////////////////////////////////////////////////////////////////////////////
+
 // we have our cards mapped with all of our info 
 // we want to make it so when we select a card we click and we see all the info
 // map all cards with a background of a card.png put card name over it
 // when we select a card we'll see all of it's information pop up
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-
-{/* <h4>{major.desc} </h4>
-                        <div id="upRevContainer">
-                <div id="upContainer">
-                    <span>UPRIGHT</span><br></br>
-                    <h3 className="resultsText"> {major.meaning_up} </h3>
-                </div>
-                <div id="revContainer">
-                    <span>REVERSED</span><br></br>
-                    <h3 className="resultsText"> {major.meaning_rev} </h3>
-                </div>
-            </div> */}

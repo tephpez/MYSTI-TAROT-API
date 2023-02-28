@@ -1,7 +1,7 @@
 export default function About (){
 
     return(
-        <div> 
+        <div id="pageContainer">
             <h1>this is the about section</h1>
         </div>
     )

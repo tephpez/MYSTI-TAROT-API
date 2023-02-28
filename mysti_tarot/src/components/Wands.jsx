@@ -12,24 +12,43 @@ console.log(props)
 
 if (props && props.wandsCard){
     return(
-       <div>
     
-        <h1>WANDS LIST</h1>
-         <div className="cardContainer">
+    <div>
+        <div id="titleSpacer"></div>
+
+
+        <div className="titleContainer">
+            <div className="titleText">
+                <h1>WANDS</h1>
+            </div>
+        </div>    
+
+
+        <div id="resultsPageContainer">
             {
                 props.wandsCard.map((wands, index) => (
                     wands.suit === "wands" ?
-                    <div key={index} className="card" onClick={() => showWands (index)}>
-                        <h3 className="cardName">{wands.name}</h3>
+                    <div id="resultsCard">
+                        <div key={index} className="resultsContainer">
+                            <h3 className="cardName">{wands.name}</h3>
+                            <h3 id="upright">UPRIGHT</h3>
+                            <h3 className="uprightText">{wands.meaning_up}</h3>
+                            <h3 id="reversed">REVERSED</h3>
+                            <h3 className="reversedText">{wands.meaning_rev}</h3>
+                        </div>
+                        <div className="seeFullContainer">
+                            <button id="seeFull" onClick={() => showWands (index)}>SEE FULL DESCRIPTION</button>
+                        </div>
                     </div>
                 : null))
             }
          </div>
-    
-         <div>
-             <Link to="/MinorLanding"><button>MINOR ARCANA</button></Link>
-             <Link to="/MajorList"><button>MAJOR ARCANA</button></Link>
+
+         <div className="redirectContainer">
+            <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
+            <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
          </div>
+
        </div> 
     )
 
@@ -39,3 +58,9 @@ if (props && props.wandsCard){
 }
 
 }
+
+
+
+
+/////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
+/////  STYLE  /////////////////////////////////////////////////////////////////////////////////////////////////

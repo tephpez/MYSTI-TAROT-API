@@ -1,67 +1,317 @@
-.App {
-  text-align: center;
-  background-color: #272928;
-}
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* HEADER */
+/* APP ******************************************************************/
 
-
-/* NAVBAR */
-
-  #navBar{
-    background-color: blueviolet;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    align-items: center;
-    margin:0 auto;
-  }
+      .App {
+        text-align: center;
+        background-color: #E3DDDD;
+        font-family: 'Philosopher', sans-serif;
+      }
 
 
-  /* #leftLinks{
-  }
 
-  #mysti{
-  }
+/* HEADER *****************SPACER*************************************************/
 
-  #rightLinks{
-  } */
+      .header{
+        background-color: #98AE92;
+        max-width: 1120px;
+        /* min-width: 600px; */
+        height: 10px;
+        padding-top: 5px;
+        padding-bottom: 35px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+         
+          
+          
+/* NAVBAR ***************LEARN/SPREADS/MYSTI/ABOUT***************************************************/
+          
+      #navBar{
+        background-color: #7F97A4;
+        display: flex;
+        flex-direction: row;
+        max-width: 1100px;
+        min-width: 520px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        padding: 10px;
+        position: relative;
+        font-family: 'Philosopher', sans-serif;
+        font-style: bold;
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
 
-/* HOME/LANDING/SPREADS PAGE */
+      }
+      
+      #mysti{
+        font-size: 60px;
+      }
 
-  #spreadsSelection{
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0 auto;
-    width: fit-content;
-    height: 500px;
-    padding: 10px
+      #leftLinks{
+        position: absolute;
+        left: 0;
+        margin-left: 15px;
+      }
 
-  }
+      #rightLinks{
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+      }
 
-  .cardContainer{
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-  
-  
-  .card{
-    /* background:url(assets/CARD1.png); */
-    
-    margin:15px;
-    height: 66vh;
-    width: 17vw;
-  }
-  
-  .spreadCardContainer{
-    background-color: blanchedalmond;
-    margin: 10px;
-    width: 200px;
-    height: 400px;
-  }
+      .navButton{
+        background-color: #7F97A4;
+        border: 1px;
+        border-color:#272928;
+        /********** WHY WHEN I REMOVE THE ABOVE TWO LINES DOES IT DISPLAY WHAT I REMOVED???? LOL */
+        cursor: pointer;
+        font-size: x-large;
+        font-family: 'Philosopher', sans-serif;
+        text-decoration: underline;
+      }
+
+      
+/* TITLE CONTAINER ******************CUPS/SWORDS/PENTACLES/WANDS/MAJOR************************************************/
+
+      .titleContainer{
+        max-width: 1120px;
+        /* min-width: 600px; */
+        background-color: #98AE92;
+        color:#E3DDDD;
+        margin:0 auto;
+        height: 60px;
+        margin-top: -22px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-bottom: 10px;
+        
+      }
+                  
+      .titleText{
+        background-color: #272928;
+        border-radius: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        
+        
+      }
+      #titleSpacer{
+        height: 50px;
+        background-color: #98AE92;
+        max-width: 1120px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+
+
+/* RESULTS PAGES **********************PREVIEWS FOR CUPS/SWORDS/PENTACLES/WANDS/MAJOR********************************************/
+
+      #resultsPageContainer{
+        background-color: #98AE92;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:0 auto;
+        max-width: 1100px;
+        min-height: 850px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        justify-content: space-evenly;    /* PLAY AROUND WITH THIS */
+        padding: 70px 10px 0 10px;
+        margin-top: -22px;
+      }
+
+      #resultsCard{
+        border: 1px solid #272928;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid #272928;
+        border-right: 2px solid #272928;
+        background-color: #93586C;
+        border-radius: 6px;
+      }
+
+      .resultsContainer{
+        width: 370px;
+        height: 200px;
+        padding: 20px;
+        overflow: scroll;
+        position: relative;
+        justify-content: space-evenly;
+      }
+
+      .cardName{
+        height: 25px;
+        margin: 0 auto;
+        background-color: #93586C;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+
+      #upright{
+        margin:.5vh;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: left;
+        padding-right: 50px;
+        padding-left: 10px;
+        padding-top: 2px;
+        font-style: bold;
+      }
+
+      .uprightText{
+        font-size: 13px;
+        font-style: italic;
+        justify-content: left;
+        text-align: left;
+        padding-right: 50px;
+        padding-left: 10px;
+      }
+
+      #reversed{
+        margin:.5vh;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: right;
+        padding-left: 50px;
+        padding-right: 10px;
+        padding-top: 2px;
+        font-style: bold;
+      }
+
+      .reversedText{
+        font-size: 13px;
+        font-style: italic;
+        justify-content: left;
+        text-align: right;
+        padding-left: 3px;
+      }
+
+      #seeFull{
+        background-color: #272928;
+        color: #E3DDDD;
+        border-radius: 10px;
+        height: 26px;
+        width: 220px;
+        cursor: pointer;
+        border: none;
+        font-family: 'Philosopher', sans-serif;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
+        font-size: 15px;
+        /* position: absolute;
+        bottom: 0; */
+      }
+
+
+/* OPTIONS PAGES ***********************SPREADS/LEARN/MINOR**********************************************************/
+
+      #optionsPageContainer{
+        background-color: #98AE92;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:0 auto;
+        max-width: 1100px;
+        min-height: 550px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 70px 10px 0 10px;
+        margin-top: -22px;
+      }
+
+      #optionCard{
+        border: 1px solid #272928;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid #272928;
+        border-right: 2px solid #272928;
+        background-color: #93586C;
+        border-radius: 6px;
+        height: 600px;
+        width: 220px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* justify-content: center; */
+      }
+
+      .optionTitle{
+        text-decoration: underline;
+        margin-bottom: 70px;
+        font-size: 25px;
+      }
+
+      .cardImg{
+        width: 170px;
+      }
+      
+      .blurbContainer{
+        background-color: #DF414E;
+        width: 200px;
+        height: 200px;
+        margin:0 auto;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: -3px;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+      }
+          
+          .optionBlurb{
+            font-style: italic;
+            padding:20px;
+
+          }
+          
+          .selectBtn{
+            background-color: #272928;
+            color: #E3DDDD;
+            border-radius: 10px;
+            height: 24px;
+            width: 64px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Philosopher', sans-serif;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+            
+          }
+          
+          .redirectContainer{
+            background-color: #98AE92;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding-top: 70px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+          }
+
+          .redirectBtn{
+            background-color: #272928;
+            color: #E3DDDD;
+            border-radius: 10px;
+            height: 30px;
+            width: 160px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Philosopher', sans-serif;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
+            font-size: large;
+          }
+          
+
+
+
+
+          
 
 
   /*  COLOR PALETTE

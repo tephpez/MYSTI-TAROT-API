@@ -6,16 +6,36 @@ import MinorLanding from './MinorLanding'
 export default function Learn(){
 
     return(
-        <div> 
-            <div>THIS IS THE LEARN PAGE</div>
-            <div id="majorArcana">
-                <h3>MAJOR ARCANA</h3>
-                <Link to="/MajorList" element={<MajorList/>}><button>select</button></Link>
+        <div id="optionsPageContainer"> 
+
+            <div id="arcanaContainer">
+                <h3 className="optionTitle">MAJOR<br></br>ARCANA</h3>
+
+                <div>
+                    <img className="cardImg" src="https://media.pixajoy.com/assets/theme-template/PLAYINGCARD/PKP3524/123/theme.jpg"></img>
+                </div>
+                <div className="blurbContainer">
+                    <h5 className="optionBlurb">major arcana blurb goes here</h5>
+                </div>
+                <div>
+                    <Link to="/MajorList" element={<MajorList/>}><button className="selectBtn">SELECT</button></Link>
+                </div>
             </div>
-            <div id="minorArcana">
-                <h3>MINOR ARCANA</h3>
-                <Link to="/MinorLanding" element={<MinorLanding/>}><button>select</button></Link> 
+            
+            <div id="arcanaContainer">
+                <h3 className="optionTitle">MINOR<br></br>ARCANA</h3>
+
+                <div>
+                    <img className="cardImg" src="https://robertlovespi.files.wordpress.com/2016/01/bigslick.jpg?w=584"></img>
+                </div>
+                <div className="blurbContainer">
+                    <h5 className="optionBlurb">minor arcana blurb goes here</h5>
+                </div>
+                <div>
+                    <Link to="/MinorLanding" element={<MinorLanding/>}><button className="selectBtn">SELECT</button></Link> 
+                </div>
             </div>
+
         </div>
     )
 }

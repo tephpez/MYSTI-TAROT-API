@@ -12,23 +12,43 @@ console.log(props)
 
 if (props && props.pentaclesCard){
     return(
-       <div>
+
+    <div>
+        <div id="titleSpacer"></div>
+
+
+        <div className="titleContainer">
+            <div className="titleText">
+                <h1>PENTACLES</h1>
+            </div>
+        </div>
+
+
+        <div id="resultsPageContainer">
+                {
+                    props.pentaclesCard.map((pentacles, index) => (
+                        pentacles.suit === "pentacles" ?
+                    
+                    <div id="resultsCard">
+                        <div key={index} className="resultsContainer">
+                            <h3 className="cardName">{pentacles.name}</h3>
+                            <h3 id="upright">UPRIGHT</h3>
+                            <h3 className="uprightText">{pentacles.meaning_up}</h3>
+                            <h3 id="reversed">REVERSED</h3>
+                            <h3 className="reversedText">{pentacles.meaning_rev}</h3>
+                        </div>
     
-        <h1>PENTACLES LIST</h1>
-         <div className="cardContainer">
-            {
-                props.pentaclesCard.map((pentacles, index) => (
-                    pentacles.suit === "pentacles" ?
-                    <div key={index} className="card" onClick={() => showPentacles (index)}>
-                        <h3 className="cardName">{pentacles.name}</h3>
+                        <div className="seeFullContainer">
+                            <button id="seeFull" onClick={() => showPentacles (index)}>SEE FULL DESCRIPTION</button>
+                        </div>
                     </div>
                 : null))
             }
          </div>
     
-         <div>
-             <Link to="/MinorLanding"><button>MINOR ARCANA</button></Link>
-             <Link to="/MajorList"><button>MAJOR ARCANA</button></Link>
+         <div className="redirectContainer">
+            <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
+            <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
          </div>
        </div> 
     )
@@ -39,3 +59,7 @@ if (props && props.pentaclesCard){
 }
 
 }
+
+
+/////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
+/////  STYLE  /////////////////////////////////////////////////////////////////////////////////////////////////
