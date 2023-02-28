@@ -12,7 +12,7 @@ export default function MajorCards(props) {
 
     return majCard (
         <div>
-            {/* <div id="upRevContainer">
+            <div id="upRevContainer">
                 <div id="upContainer">
                     <span>UPRIGHT</span><br></br>
                     <h3 className="resultsText"> {majCard.meaning_up} </h3>
@@ -21,7 +21,7 @@ export default function MajorCards(props) {
                     <span>REVERSED</span><br></br>
                     <h3 className="resultsText"> {majCard.meaning_rev} </h3>
                 </div>
-            </div> */}
+            </div>
             
             <br></br>
 

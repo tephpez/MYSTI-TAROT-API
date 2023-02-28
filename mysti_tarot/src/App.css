@@ -41,24 +41,30 @@
 
   }
 
-.cardContainer{
-  display: flex;
-  flex-wrap: wrap;
+  .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  
+  .card{
+    /* background:url(assets/CARD1.png); */
+    
+    margin:15px;
+    height: 66vh;
+    width: 17vw;
+  }
+  
+  .spreadCardContainer{
+    background-color: blanchedalmond;
+    margin: 10px;
+    width: 200px;
+    height: 400px;
+  }
 
-}
 
-
-.card{
-  /* background-color: blanchedalmond;
-  border: 5px solid black; */
-  background:url(assets/CARD1.png);
-
-  margin:15px;
-  height: 66vh;
-  width: 17vw;
-}
-
-/*  COLOR PALETTE
+  /*  COLOR PALETTE
 BLACK - 272928
 CREAM - E3DDDD
 GREEN - 98AE92

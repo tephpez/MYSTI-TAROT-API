@@ -3,6 +3,8 @@
 export default function Header(){
 
     return(
-        <div>THIS IS THE HEADER</div>
+        <div>
+            <h1>MYSTI</h1>
+        </div>
     )
 }

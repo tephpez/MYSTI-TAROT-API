@@ -12,27 +12,19 @@ console.log(props)
 
 if (props && props.majCard){
     return(
+        
        <div>
     
-        <h1>MAJOR ARCANA</h1>
+        <h1>MAJOR LIST</h1>
          <div className="cardContainer">
             {
                 props.majCard.map((major, index) => (
-                    <div key={index} className="card" onClick={() => showMajor(index)}>
+                    major.type === "major" ?
+                    <div key={index} className="card" onClick={() => showMajor (index)}>
                         <h3 className="cardName">{major.name}</h3>
-                        {/* <h4>{major.desc} </h4>
-                        <div id="upRevContainer">
-                <div id="upContainer">
-                    <span>UPRIGHT</span><br></br>
-                    <h3 className="resultsText"> {major.meaning_up} </h3>
-                </div>
-                <div id="revContainer">
-                    <span>REVERSED</span><br></br>
-                    <h3 className="resultsText"> {major.meaning_rev} </h3>
-                </div>
-            </div> */}
+                        
                     </div>
-                ))
+                : null))
             }
          </div>
     
@@ -58,3 +50,15 @@ if (props && props.majCard){
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+{/* <h4>{major.desc} </h4>
+                        <div id="upRevContainer">
+                <div id="upContainer">
+                    <span>UPRIGHT</span><br></br>
+                    <h3 className="resultsText"> {major.meaning_up} </h3>
+                </div>
+                <div id="revContainer">
+                    <span>REVERSED</span><br></br>
+                    <h3 className="resultsText"> {major.meaning_rev} </h3>
+                </div>
+            </div> */}
