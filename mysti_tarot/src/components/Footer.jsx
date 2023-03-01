@@ -3,6 +3,6 @@
 export default function Footer(){
 
     return(
-        <div>THIS IS THE FOOTER</div>
+        <div id="footer">THIS IS THE FOOTER</div>
     )
 }

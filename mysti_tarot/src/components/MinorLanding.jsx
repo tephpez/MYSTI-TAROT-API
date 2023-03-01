@@ -10,7 +10,7 @@ export default function MinorLanding(){
     
     return(
 
-    <div>
+    <div id="landingContainer">
         <div id="titleSpacer"></div>
 
         <div className="titleContainer">
@@ -20,68 +20,63 @@ export default function MinorLanding(){
         </div>
 
 
-        <div id="optionsPageContainer">
-            <div id="optionCard">
-                <img className="cardImg" src="https://i5.walmartimages.com/asr/53297b03-f8fe-4930-890d-b44386219b75_1.bfcc8e3644bce7f5e51a102d231613bc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"></img>
-                <h3 className="optionTitle">CUPS</h3>
+        <div className="optionsPageContainer" id="minorOptionsPgContainer">
 
-                <div className="blurbContainer">
-                    <h5 className="optionBlurb">cups blurb goes here</h5>                
+            <div className="optionCard" id="minorOptionCard">
+                <div>
+                    <Link to="/Cups" element={<Cups/>}><button className="linkBtn" id="minorLinkBtn">CUPS</button></Link>
                 </div>
 
-                <div>
-                    <Link to="/Cups" element={<Cups/>}><button className="selectBtn">select</button></Link>
+                <img className="cardImg" src="https://i.imgur.com/3Pta42t.png"></img>
+
+                <div className="blurbContainer">
+                    <h5 className="optionBlurb">The Suit of Cups deal with the emotional level of consciousness and are associated with love, feelings, relationships and connections.</h5>                
                 </div>
             </div>
 
-            <div id="optionCard">
-                <img className="cardImg" src="https://i5.walmartimages.com/asr/53297b03-f8fe-4930-890d-b44386219b75_1.bfcc8e3644bce7f5e51a102d231613bc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"></img>
-                <h3 className="optionTitle">SWORDS</h3>
+            <div className="optionCard" id="minorOptionCard">
+                <div>
+                    <Link to="/Swords" element={<Swords/>}><button className="linkBtn" id="minorLinkBtn">SWORDS</button></Link> 
+                </div>
+
+                <img className="cardImg" src="https://i.imgur.com/Axp5Ml6.png"></img>
 
                 <div className="blurbContainer">
-                    <h5 className="optionBlurb">swords blurb goes here</h5>                
-                </div>
-
-                <div>
-                    <Link to="/Swords" element={<Swords/>}><button className="selectBtn">select</button></Link> 
-                </div>
-            </div>
-       
-            <div id="optionCard">
-                <img className="cardImg" src="https://i5.walmartimages.com/asr/53297b03-f8fe-4930-890d-b44386219b75_1.bfcc8e3644bce7f5e51a102d231613bc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"></img>
-                <h3 className="optionTitle">PENTACLES</h3>
-
-                <div className="blurbContainer">
-                    <h5 className="optionBlurb">pentacles blurb goes here</h5>                
-                </div>
-
-                <div>
-                    <Link to="/Pentacles" element={<Pentacles/>}><button className="selectBtn">select</button></Link> 
+                    <h5 className="optionBlurb">The Suit of Swords deal with the mental level of consciousness that is centered around the mind and the intellect. </h5>
                 </div>
             </div>
        
-            <div id="optionCard">
-                <img className="cardImg" src="https://i5.walmartimages.com/asr/53297b03-f8fe-4930-890d-b44386219b75_1.bfcc8e3644bce7f5e51a102d231613bc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"></img>
-                <h3 className="optionTitle">WANDS</h3>
+            <div className="optionCard" id="minorOptionCard">
+                <div>
+                    <Link to="/Pentacles" element={<Pentacles/>}><button className="linkBtn" id="minorLinkBtn">PENTACLES</button></Link> 
+                </div>
+
+                <img className="cardImg" src="https://i.imgur.com/GFuU2jZ.png"></img>
+
+                <div className="blurbContainer">
+                    <h5 className="optionBlurb">The Suit of Pentacles deal with the physical or external level of consciousness and thus mirror the outer situations of your health, finances, work, and creativity. </h5>                
+                </div>
+            </div>
+       
+            <div className="optionCard" id="minorOptionCard">
+                <div>
+                    <Link to="/Wands" element={<Wands/>}><button className="linkBtn" id="minorLinkBtn">WANDS</button></Link> 
+                </div>
+
+                <img className="cardImg" src="https://i.imgur.com/NNf9nYa.png"></img>
                 
                 <div className="blurbContainer">
-                    <h5 className="optionBlurb">wands blurb goes here</h5>                
-                </div>
-
-                <div>
-                    <Link to="/Wands" element={<Wands/>}><button className="selectBtn">select</button></Link> 
+                    <h5 className="optionBlurb">The Suit of Wands deal with primal energy, spirituality, inspiration, determination, strength, intuition, creativity, ambition and expansion, original thought and the seeds through which life springs forth.</h5>                
                 </div>
             </div>
         </div>
-
-
-
         <div className="redirectContainer">
-            <Link to="/MajorList" element={<MajorList/>}><button className="redirectBtn">MAJOR ARCANA</button></Link>
+                <Link to="/MajorList" element={<MajorList/>}><button className="linkBtn" id="redirectBtn">MAJOR ARCANA</button></Link>
         </div>
     </div>
     )
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+/////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
+/////  STYLE  /////////////////////////////////////////////////////////////////////////////////////////////////

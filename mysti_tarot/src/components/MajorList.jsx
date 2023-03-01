@@ -23,34 +23,34 @@ if (props && props.majCard){
             </div>
         </div>
 
+        <div className="redirectContainer">
+            <div className="redirectBtnsContainer">
+                <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
+            </div>
+         </div>
 
-        <div id="resultsPageContainer">
+        <div className="resultsPageContainer">
             {
                 props.majCard.map((major, index) => (
                     major.type === "major" ?
 
-                <div id="resultsCard">
-                    <div key={index} className="resultsContainer">
+                <div className="resultsCard">
+                    <div key={index} className="resultsTextContainer">
                         <h3 className="cardName">{major.name}</h3>
                         <h3 id="upright">UPRIGHT</h3>
-                        <h3 className="uprightText">{major.meaning_up}</h3>
+                        <h3 className="upResults">{major.meaning_up}</h3>
                         <h3 id="reversed">REVERSED</h3>
-                        <h3 className="reversedText">{major.meaning_rev}</h3>
+                        <h3 className="revResults">{major.meaning_rev}</h3>
                     </div>
 
                     <div className="seeFullContainer">
-                        <button id="seeFull" onClick={() => showMajor (index)}>SEE FULL DESCRIPTION</button>
+                        <button className="seeFull" onClick={() => showMajor (index)}>SEE FULL DESCRIPTION</button>
                     </div>
 
                 </div>
                 : null))
             }
          </div>
-    
-         <div className="redirectContainer">
-             <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
-         </div>
-
        </div> 
     )
 

@@ -3,53 +3,63 @@ import { Link } from "react-router-dom";
 export default function Main () {
 
     return (
-        <div id="optionsPageContainer"> 
-            <div>
-                <h3 className="optionTitle">ORACLE<br></br>SPREAD</h3>
-                
-                <div>
-                    <img className="cardImg" src="https://media.pixajoy.com/assets/theme-template/PLAYINGCARD/PKP3524/123/theme.jpg"></img><br></br>
-                </div>
 
+    <div>
+        <div id="titleSpacer"></div>
+
+        <div className="titleContainer">
+            <div className="titleText">
+                <h1 id="landingTitle">CHOOSE YOUR SPREAD</h1>
+            </div>
+        </div>
+
+
+        <div className="optionsPageContainer"> 
+
+            <div className="optionCard" id="spreadCard">
+                <h3 className="optionTitle">ORACLE<br></br>SPREAD</h3>
+                <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/GFuU2jZ.png"></img>
+                
                 <div className="blurbContainer">    
                     <h5 className="optionBlurb">oracle blurb goes here</h5>
                 </div>
+
                 <div>
                     <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
                 </div>
-
             </div>
 
-            <div>
-                <h3 className="optionTitle">IN/OUT<br></br>SPREAD</h3>
+            <div className="optionCard" id="spreadCard">
+                <h3 className="optionTitle">PULL/<br></br>PURGE</h3>
+                <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/3Pta42t.png"></img>
 
-                <div>
-                    <img className="cardImg" src="https://robertlovespi.files.wordpress.com/2016/01/bigslick.jpg?w=584"></img><br></br>
-                </div>
                 <div className="blurbContainer">    
-                    <h5 className="optionBlurb">in/out blurb goes here</h5>
+                    <h5 className="optionBlurb">One card represents what you need to pull into your life, the second, what you need to purge.</h5>
                 </div>
+
                 <div>
                     <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
                 </div>
-
             </div>
 
-            <div>
-                <h3 className="optionTitle">PROBLEM/CAUSE/<br></br>SOLUTION SPREAD</h3>
+            <div className="optionCard" id="spreadCard">
+                <h3 className="optionTitle">PROBLEM/<br></br>CAUSE/SOLUTION</h3>
+              <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/Axp5Ml6.png"></img>
 
-                <div>
-                    <img className="cardImg" src="https://i5.walmartimages.com/asr/53297b03-f8fe-4930-890d-b44386219b75_1.bfcc8e3644bce7f5e51a102d231613bc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"></img><br></br>
-                </div>
                 <div className="blurbContainer">
                     <h5 className="optionBlurb">problem/cause/solution blurb goes here</h5>
                 </div>
+
                 <div>
                     <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
                 </div>
-
             </div>
         </div>
+
+        {/* <div className="redirectContainer"><h1> </h1></div> */}
+    </div>
+
+
     )
 }
 

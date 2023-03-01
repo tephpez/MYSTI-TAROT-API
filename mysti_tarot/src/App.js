@@ -15,6 +15,7 @@ import Cups from './components/Cups'
 import Swords from './components/Swords'
 import Pentacles from './components/Pentacles'
 import Wands from './components/Wands'
+import Footer from './components/Footer'
 
 
 
@@ -106,21 +107,26 @@ import Wands from './components/Wands'
 
   return (
     <div className="App">
-      <Header/>
-      <Nav/>
-        <Routes>
-          <Route path ="/" element={<Main/>}></Route>
-          <Route path ="/Learn" element={<Learn/>}></Route>
-          <Route path ="/About" element={<About/>}></Route>
-          
-          <Route path="/majorList" element = {<MajorList  majCard={majCard}/>}/>
+      <div>
+        <Header/>
+        <Nav/>
+          <Routes>
+            <Route path ="/" element={<Main/>}></Route>
+            <Route path ="/Learn" element={<Learn/>}></Route>
+            <Route path ="/About" element={<About/>}></Route>
+            
+            <Route path="/majorList" element = {<MajorList  majCard={majCard}/>}/>
 
-          <Route path="/minorLanding" element = {<MinorLanding/>}/>
-          <Route path ="/Cups" element={<Cups cupsCard={cupsCard}/>}></Route>
-          <Route path ="/Pentacles" element={<Pentacles pentaclesCard={pentaclesCard}/>}></Route>
-          <Route path ="/Swords" element={<Swords swordsCard={swordsCard}/>}></Route>
-          <Route path ="/Wands" element={<Wands wandsCard={wandsCard}/>}></Route>
-        </Routes>
+            <Route path="/minorLanding" element = {<MinorLanding/>}/>
+            <Route path ="/Cups" element={<Cups cupsCard={cupsCard}/>}></Route>
+            <Route path ="/Pentacles" element={<Pentacles pentaclesCard={pentaclesCard}/>}></Route>
+            <Route path ="/Swords" element={<Swords swordsCard={swordsCard}/>}></Route>
+            <Route path ="/Wands" element={<Wands wandsCard={wandsCard}/>}></Route>
+          </Routes>
+        </div>
+        <div>
+          <Footer/>
+        </div>
       </div>
 
   );

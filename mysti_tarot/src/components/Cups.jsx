@@ -23,38 +23,36 @@ if (props && props.cupsCard){
             </div>
         </div>
 
+        <div className="redirectContainer">
+            <div className="redirectBtnsContainer" id="resultsPageRedirect">
+                <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
+                <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
+            </div>
+        </div>
 
-        <div id="resultsPageContainer">
+        <div className="resultsPageContainer">
             {
                 props.cupsCard.map((cups, index) => (
                     cups.suit === "cups" ?
 
-                <div id="resultsCard">
-                    <div key={index} className="resultsContainer">
+                <div className="resultsCard">
+                    <div key={index} className="resultsTextContainer">
                         <h3 className="cardName">{cups.name}</h3>
                         <h3 id="upright">UPRIGHT</h3>
-                        <h3 className="uprightText">{cups.meaning_up}</h3>
+                        <h3 className="upResults">{cups.meaning_up}</h3>
                         <h3 id="reversed">REVERSED</h3>
-                        <h3 className="reversedText">{cups.meaning_rev}</h3>
+                        <h3 className="revResults">{cups.meaning_rev}</h3>
                     </div>
 
                     <div className="seeFullContainer">
-                        <button id="seeFull" onClick={() => showCups (index)}>SEE FULL DESCRIPTION</button>
+                        <button className="seeFull" onClick={() => showCups (index)}>SEE FULL DESCRIPTION</button>
                     </div>
 
                 </div>
                 : null))
             }
         </div>
-
-
-         <div className="redirectContainer">
-            <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
-            <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
-         </div>
-
-
-       </div> 
+    </div> 
     )
 
 } else {

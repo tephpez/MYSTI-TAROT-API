@@ -12,10 +12,9 @@
 
 /* HEADER *****************SPACER*************************************************/
 
-      .header{
+      #header{
         background-color: #98AE92;
         max-width: 1120px;
-        /* min-width: 600px; */
         height: 10px;
         padding-top: 5px;
         padding-bottom: 35px;
@@ -33,7 +32,6 @@
         display: flex;
         flex-direction: row;
         max-width: 1100px;
-        min-width: 520px;
         height: 40px;
         justify-content: center;
         align-items: center;
@@ -46,7 +44,6 @@
         border-bottom: 2px solid black;
         border-left: 1px solid black;
         border-right: 1px solid black;
-
       }
       
       #mysti{
@@ -65,7 +62,7 @@
         margin-right: 15px;
       }
 
-      .navButton{
+      .navBtn{
         background-color: #7F97A4;
         border: 1px;
         border-color:#272928;
@@ -74,6 +71,11 @@
         font-size: x-large;
         font-family: 'Philosopher', sans-serif;
         text-decoration: underline;
+      }
+
+      .navBtn:hover{
+        transform: translateY(-2px);
+
       }
 
       
@@ -90,18 +92,17 @@
         border-left: 1px solid black;
         border-right: 1px solid black;
         padding-bottom: 10px;
-        
       }
                   
       .titleText{
         background-color: #272928;
-        border-radius: 10px;
+        border-radius: 15px;
         max-width: 1000px;
         margin: 0 auto;
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
-        
-        
+        height: 38px;
       }
+
       #titleSpacer{
         height: 50px;
         background-color: #98AE92;
@@ -113,9 +114,55 @@
 
 
 
+/* REDIRECT BUTTON CONTAINER *********************************************************************************/
+
+      .redirectContainer{
+        background-color: #98AE92;
+        max-width: 1120px;
+        height: 60px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-bottom: 100px;
+      }
+
+      .redirectBtnsContainer{
+        width:950px;
+        height:35px;
+        margin: 0 auto;
+        background-color: #E3DDDD;
+        border-radius: 15px;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        padding-top:7px;
+        border: 1px solid #272928;
+        border-bottom: 2px solid #272928;
+        border-right: 2px solid #272928;
+      }
+
+      #redirectBtn:hover {
+        background-color: #2e2e2e;
+        transform: translateYp(-2x);
+      }
+
+
+      #redirectBtn{
+        width:240px;
+        background-color: #323333;
+        color: #E3DDDD;
+        font-size: 26px;
+        text-decoration: none;
+        margin-top: 30px;
+      }
+
+
+      #learnRedirectContainer{
+        height:40px;
+      }
+          
 /* RESULTS PAGES **********************PREVIEWS FOR CUPS/SWORDS/PENTACLES/WANDS/MAJOR********************************************/
 
-      #resultsPageContainer{
+      .resultsPageContainer{
         background-color: #98AE92;
         display: flex;
         flex-direction: row;
@@ -126,11 +173,10 @@
         border-left: 1px solid black;
         border-right: 1px solid black;
         justify-content: space-evenly;    /* PLAY AROUND WITH THIS */
-        padding: 70px 10px 0 10px;
-        margin-top: -22px;
+        padding: 20px 10px 0 10px;
       }
 
-      #resultsCard{
+      .resultsCard{
         border: 1px solid #272928;
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -138,10 +184,10 @@
         border-bottom: 2px solid #272928;
         border-right: 2px solid #272928;
         background-color: #93586C;
-        border-radius: 6px;
+        border-radius: 15px;
       }
 
-      .resultsContainer{
+      .resultsTextContainer{
         width: 370px;
         height: 200px;
         padding: 20px;
@@ -169,7 +215,7 @@
         font-style: bold;
       }
 
-      .uprightText{
+      .upResults{
         font-size: 13px;
         font-style: italic;
         justify-content: left;
@@ -189,7 +235,7 @@
         font-style: bold;
       }
 
-      .reversedText{
+      .revResults{
         font-size: 13px;
         font-style: italic;
         justify-content: left;
@@ -197,7 +243,7 @@
         padding-left: 3px;
       }
 
-      #seeFull{
+      .seeFull{
         background-color: #272928;
         color: #E3DDDD;
         border-radius: 10px;
@@ -208,14 +254,12 @@
         font-family: 'Philosopher', sans-serif;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
         font-size: 15px;
-        /* position: absolute;
-        bottom: 0; */
       }
 
 
 /* OPTIONS PAGES ***********************SPREADS/LEARN/MINOR**********************************************************/
 
-      #optionsPageContainer{
+      .optionsPageContainer{
         background-color: #98AE92;
         display: flex;
         flex-direction: row;
@@ -223,90 +267,181 @@
         justify-content: center;
         margin:0 auto;
         max-width: 1100px;
-        min-height: 550px;
+        min-height: 610px;
         border-left: 1px solid black;
         border-right: 1px solid black;
         padding: 70px 10px 0 10px;
-        margin-top: -22px;
       }
 
-      #optionCard{
-        border: 1px solid #272928;
-        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
-        border-bottom: 2px solid #272928;
-        border-right: 2px solid #272928;
-        background-color: #93586C;
-        border-radius: 6px;
-        height: 600px;
+      .optionCard {
+        height: 90px;
         width: 220px;
         margin-left: 10px;
         margin-right: 10px;
-        /* justify-content: center; */
+        margin-top: -40px;
+      }
+
+      .cardImg{
+        width: 180px;
+        height: 207px;
       }
 
       .optionTitle{
         text-decoration: underline;
-        margin-bottom: 70px;
         font-size: 25px;
-      }
-
-      .cardImg{
-        width: 170px;
-      }
+      }    
+      
       
       .blurbContainer{
-        background-color: #DF414E;
-        width: 200px;
-        height: 200px;
-        margin:0 auto;
-        padding: 10px;
-        margin-bottom: 20px;
-        margin-top: -3px;
-        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        background-color: #cb3844;
         justify-content: center;
+        text-align: center;
+        align-items: center;
+        width:220px;
+        height: 150px;
+        margin:0 auto;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        border: 1px solid #272928;
+        border-radius: 15px;
+        border-bottom: 2px solid #272928;
+        border-right: 2px solid #272928;
       }
-          
-          .optionBlurb{
-            font-style: italic;
-            padding:20px;
+       
+      
+      .optionBlurb{
+        font-style: italic;
+        padding:10px;
+        font-size: 15px;;
+      }
+      
+      .selectBtn{
+        background-color: #272928;
+        color: #E3DDDD;
+        border-radius: 10px;
+        height: 24px;
+        width: 64px;
+        cursor: pointer;
+        border: none;
+        font-family: 'Philosopher', sans-serif;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+      }
+      
+      #linkBtn{
+        background-color: #272928;
+        color: #E3DDDD;
+        border-radius: 10px;
+        height: 24px;
+        width: 64px;
+        cursor: pointer;
+        border: none;
+        font-family: 'Philosopher', sans-serif;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+      }
+      
+      
+/* SPREAD STYLES ***********************MAIN**********************************************************/
 
-          }
-          
-          .selectBtn{
-            background-color: #272928;
-            color: #E3DDDD;
-            border-radius: 10px;
-            height: 24px;
-            width: 64px;
-            cursor: pointer;
-            border: none;
-            font-family: 'Philosopher', sans-serif;
-            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-            
-          }
-          
-          .redirectContainer{
-            background-color: #98AE92;
-            max-width: 1120px;
-            margin: 0 auto;
-            padding-top: 70px;
-            border-left: 1px solid black;
-            border-right: 1px solid black;
-          }
+      #spreadCard{
+        margin-left: 40px;
+        margin-right: 40px;
+        /* margin-top: -20px; */
+      }
 
-          .redirectBtn{
-            background-color: #272928;
-            color: #E3DDDD;
-            border-radius: 10px;
-            height: 30px;
-            width: 160px;
-            cursor: pointer;
-            border: none;
-            font-family: 'Philosopher', sans-serif;
-            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
-            font-size: large;
-          }
-          
+      #spreadCardImg{
+        width:210px;
+        height:248px;
+      }
+
+
+/* MINOR STYLES ***********************MINOR LANDING**********************************************************/   
+      
+      #minorLinkBtn{
+        width: 180px;
+        font-size: 24px;
+        font-style: bold;
+      }
+
+      #minorOptionsPgContainer{
+        min-height: 450px;
+      }
+
+      #minorOptionCard{
+        margin-top: -20px;
+      }
+
+/* ARCANA STYLES ***********************LEARN**********************************************************/
+
+      #arcanaCard {
+        margin-left: 80px;
+        margin-right: 80px;
+        width:306px;
+        height:436px;
+        /* background-color: #78128d; */
+        box-shadow: none;
+      }
+
+      .arcanaImgContainer{
+        width:306px;
+        height:302px;
+      }
+      
+      #arcanaCardImg{
+        width: 306px;
+        height: 352px;
+      }
+      
+      #arcanaBlurbContainer{
+        width:340px;
+        height: 150px;
+      }
+      
+
+/* BUTTONS STYLES ***********************LEARN**********************************************************/
+
+      .linkBtn{
+        font-size: 28px;
+        width: 280px;
+        height: 35px;
+        font-style: bold;
+        text-decoration: underline;
+        border: 1px solid #272928;
+        align-content: center;
+        background-color: #E3DDDD; 
+        border-radius: 10px;
+        color: #272928;
+        font-family: 'Philosopher', sans-serif;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 25px;      
+        cursor: pointer;
+        font-style: bold;
+        border: 1px solid #272928;
+      }
+
+      .linkBtn:hover{
+        background-color: #c3bdbd;
+        transform: translateY(-2px);
+      }
+
+
+/* FOOTER *****************SPACER*************************************************/
+      
+      #footer{
+        background-color: #7F97A4;
+        max-width: 1120px;
+        height: 30px;
+        /* padding-top: 5px;
+        padding-bottom: 35px; */
+        margin: 0 auto;
+        border-top: 2px solid #272928;
+        border-right: 1px solid #272928;
+        border-left: 1px solid #272928;
+
+      }
+
+
+
 
 
 
