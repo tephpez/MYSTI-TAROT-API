@@ -8,19 +8,14 @@ export default function Learn(){
     return(
         <div>
             <div id="titleSpacer"></div>
-
             <div className="titleContainer">
-            <div className="titleText">
-                <h1>CHOOSE A CATEGORY</h1>
-            </div>
-        </div>
+                <div className="titleText">
+                    <h4>CHOOSE A CATEGORY</h4>
+                </div>   
+            </div>    
 
-        {/* <div className="redirectContainer" id="learnRedirectContainer"></div> */}
-            
-
-
-            <div className="optionsPageContainer"> 
-                <div>
+            <div className="pageContainer"> 
+                <div id="optionCardContainer">
                     <div className="optionCard" id="arcanaCard">
                         <div>
                             <Link to="/MajorList" element={<MajorList/>}><button className="linkBtn">MAJOR ARCANA</button></Link>
@@ -54,6 +49,7 @@ export default function Learn(){
                 </div>
             </div>
         </div>
+
     )
 }
 

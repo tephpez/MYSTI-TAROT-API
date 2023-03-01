@@ -15,12 +15,12 @@ export default function MinorLanding(){
 
         <div className="titleContainer">
             <div className="titleText">
-                <h1>MINOR ARCANA</h1>
+                <h4>MINOR ARCANA</h4>
             </div>
         </div>
 
 
-        <div className="optionsPageContainer" id="minorOptionsPgContainer">
+        <div className="pageContainer" id="minorOptionsPgContainer">
 
             <div className="optionCard" id="minorOptionCard">
                 <div>

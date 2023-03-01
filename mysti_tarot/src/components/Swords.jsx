@@ -19,7 +19,7 @@ if (props && props.swordsCard){
 
         <div className="titleContainer">
             <div className="titleText">
-                <h1>SWORDS</h1>
+                <h4>SWORDS</h4>
             </div>
         </div>
 

@@ -34,6 +34,8 @@ DRAW.IO - https://app.diagrams.net/?libs=general;flowchart#G1_Tejn8qEECQz9R0pQtd
 - BOOTSTRAP ACCORDION TUTORIAL - https://github.com/arslanah99/accordion-tutorial-for-youtube/blob/master/src/App.js
                                - https://react-bootstrap.github.io/components/accordion/
 - CHAT GPI - for minor CSS styling, syntax & misc questions
+- DIV ARRANGEMENT - http://jsfiddle.net/rbHah/
+- FLEXBOX - https://www.youtube.com/watch?v=fYq5PXgSsbE
 
 - TAROT API - https://tarot-api.onrender.com/api/v1/cards
 - CARD BACK IMAGES SOURCE - https://www.etsy.com/listing/1170879353/vintage-card-backs-tarot-card-backs-png?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=tarot+card+design&ref=sr_gallery-1-3&pro=1&organic_search_click=1
@@ -42,5 +44,7 @@ DRAW.IO - https://app.diagrams.net/?libs=general;flowchart#G1_Tejn8qEECQz9R0pQtd
 - TAROT REFERENCE INFO - https://www.biddytarot.com/tarot-card-meanings/
 
 
+
+🔮
 
 

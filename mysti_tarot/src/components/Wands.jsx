@@ -19,7 +19,7 @@ if (props && props.wandsCard){
 
         <div className="titleContainer">
             <div className="titleText">
-                <h1>WANDS</h1>
+                <h4>WANDS</h4>
             </div>
         </div>    
 

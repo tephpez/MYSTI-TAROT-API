@@ -6,15 +6,14 @@ export default function Main () {
 
     <div>
         <div id="titleSpacer"></div>
-
         <div className="titleContainer">
-            <div className="titleText">
-                <h1 id="landingTitle">CHOOSE YOUR SPREAD</h1>
+            <div className="titleText" id="landingTitleText">
+                <h4>CHOOSE YOUR SPREAD</h4>
             </div>
         </div>
 
 
-        <div className="optionsPageContainer" id="spreadPageContainer"> 
+        <div className="pageContainer" id="landingPageContainer"> 
 
             <div className="optionCard" id="spreadCard">
                 <div>
@@ -30,7 +29,7 @@ export default function Main () {
 
             <div className="optionCard" id="spreadCard">
                 <div>
-                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">PULL // <br></br> PURGE</button></Link>
+                    <Link to="/Spread2"><button className="linkBtn" id="spreadLinkBtn">PULL // <br></br> PURGE</button></Link>
                 </div>
                 <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/3Pta42t.png"></img>
 
@@ -42,7 +41,7 @@ export default function Main () {
 
             <div className="optionCard" id="spreadCard">
                 <div>
-                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
+                    <Link to="/Spread3"><button className="linkBtn" id="spreadLinkBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
                 </div>
               <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/Axp5Ml6.png"></img>
 

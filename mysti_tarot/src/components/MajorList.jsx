@@ -17,44 +17,55 @@ if (props && props.majCard){
     return(
         
         <div>
-        <div id="titleSpacer"></div>
-
- 
-        <div className="titleContainer">
-            <div className="titleText">
-                <h1>MAJOR ARCANA</h1>
-            </div>
-        </div>
-
-
-        <div>
-            {
-                props.majCard.map((major, index) => (
-                    major.type === "major" ?
-
-                <div className="resultsCard">
-                    
-                    <Accordion defaultActiveKey={index} alwaysopen>
-                        <AccordionItem eventKey={major} id="">
-                            <AccordionHeader> {major.name}</AccordionHeader>
-                            <AccordionBody>
-                                <ul>
-                                    <li>{major.meaning_up}</li>
-                                    <li>{major.meaning_rev}</li>
-                                    <li>{major.desc}</li>
-                                </ul>
-                            </AccordionBody>
-                        </AccordionItem>
-                    </Accordion>
-
+            <div id="titleSpacer"></div>
+            <div className="titleContainer">
+                <div className="titleText">
+                    <h4>MAJOR ARCANA</h4>
                 </div>
+            </div>
+
+
+            <div id="accordionContainerContainer">
+                <div id="accordionContainer">
+                    {
+                        props.majCard.map((major, index) => (
+                            major.type === "major" ?
+
+                        <div className="accResultsCard">
+                            
+                            <Accordion defaultActiveKey={index} alwaysopen>
+                                <AccordionItem eventKey={major} id="">
+                                        <AccordionHeader>{major.name}</AccordionHeader>
+                                        <AccordionBody>
+                                            <div id="upRevDivContainer">
+                                                <div id="upResults">
+                                                    <p id="accTitle">UPRIGHT MEANING</p>
+                                                    <p id="accResultsText">{major.meaning_up}</p>      {/* REMOVE ID AND ADJUST CSS ACCORDINGLY */}
+                                                </div>
+                                                <div id="revResults">
+                                                    <p id="accTitle">REVERSED MEANING</p>
+                                                    <p id="accResultsText">{major.meaning_rev}</p>
+                                                </div>
+                                            </div>
+                                            <hr></hr>
+                                            {/* <div id="descResultsContainer"> */}
+                                                <div id="descResults">
+                                                    <p id="accTitle">DESCRIPTION</p>
+                                                    <p id="accResultsText">{major.desc}</p>
+                                                </div>
+                                            {/* </div> */}
+                                        </AccordionBody>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
                 : null))
-            }
-         </div>
-                    <div className="redirectContainer">
-                            <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
-                     </div>
-       </div> 
+                }
+                </div>
+                <div className="redirectContainer">
+                    <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
+                </div>
+            </div> 
+        </div>
     )
 
 } else {

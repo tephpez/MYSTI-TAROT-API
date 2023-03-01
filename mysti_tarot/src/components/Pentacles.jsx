@@ -19,7 +19,7 @@ if (props && props.pentaclesCard){
 
         <div className="titleContainer">
             <div className="titleText">
-                <h1>PENTACLES</h1>
+                <h4>PENTACLES</h4>
             </div>
         </div>
 

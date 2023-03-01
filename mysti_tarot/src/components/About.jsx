@@ -1,8 +1,25 @@
 export default function About (){
 
     return(
-        <div id="pageContainer">
-            <h1>this is the about section</h1>
+        <div>
+            <div id="titleSpacer"></div>
+            <div className="titleContainer">
+                <div className="titleText">
+                   <div className="pageContainer">
+
+                        <h4 id="landingTitle">ABOUT PAGE</h4>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
+
+
     )
 }

@@ -22,8 +22,7 @@ import Footer from './components/Footer'
 
 // import Spread1 from './components/Spread1'
 // import Spread2 from './components/Spread2'
-// import Spread3 from './components/Spread3'
-// import Footer from './components/Footer'
+import Spread3 from './components/Spread3'
 
 
 /// MAJOR ARCANA CARD MAPPING ///
@@ -121,6 +120,7 @@ import Footer from './components/Footer'
             <Route path ="/Pentacles" element={<Pentacles pentaclesCard={pentaclesCard}/>}></Route>
             <Route path ="/Swords" element={<Swords swordsCard={swordsCard}/>}></Route>
             <Route path ="/Wands" element={<Wands wandsCard={wandsCard}/>}></Route>
+            <Route path="/Spread3" element={<Spread3/>}></Route>
           </Routes>
         </div>
         <div>

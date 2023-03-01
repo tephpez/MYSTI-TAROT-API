@@ -3,195 +3,211 @@
 /* APP ******************************************************************/
 
       .App {
-        text-align: center;
         background-color: #E3DDDD;
         font-family: 'Philosopher', sans-serif;
+        font-style: bold;
+        text-align: center;
+        min-height: 900px;
       }
 
+                                    /* PAGE CONTAINER FORMATTING */
+
+                                    /* #header, 
+                                    #navBar, 
+                                    #titleSpacer 
+                                    .titleContainer, 
+                                    .resultsPageContainer, 
+                                    #footer, 
+                                    #accordionContainerContainer, 
+                                    .redirectContainer {
+                                            margin: 0 auto;
+                                            max-width: 1100px;
+                                            background-color: #98AE92;
+                                            border-left: 1px solid black;
+                                            border-right: 1px solid black;
+                                    } */
+
+
+                                    /* FLOATING CONTAINER FORMATTING */
+
+                                    /* .titleText, 
+                                    .resultsCard, 
+                                    .blurbContainer, 
+                                    .linkBtn, 
+                                    .redirectBtnsContainer{
+                                      border-radius: 15px;
+                                      border: 1px solid #272928;
+                                      border-bottom: 2px solid #272928;
+                                      border-right: 2px solid #272928;
+                                      box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+                                    } */
 
 
 /* HEADER *****************SPACER*************************************************/
 
       #header{
-        background-color: #98AE92;
-        max-width: 1100px;
-        height: 10px;
-        padding-top: 5px;
-        padding-bottom: 35px;
+        height: 70px;
+        padding-top: 5px;   /************** WHY IS THIS NECESSARY? */
+        
+
+
         margin: 0 auto;
+        max-width: 1100px;
+        background-color: #98AE92;
         border-left: 1px solid black;
         border-right: 1px solid black;
+        /* #header */
+
       }
          
           
           
-/* NAVBAR ***************LEARN/SPREADS/MYSTI/ABOUT***************************************************/
+/* NAVBAR *********************************************************************************/
           
       #navBar{
         background-color: #7F97A4;
         display: flex;
         flex-direction: row;
-        max-width: 1100px;
-        height: 55px;
+        height: 57px;
         justify-content: center;
         align-items: center;
-        margin:0 auto;
-        padding: 8px;
         position: relative;
-        font-family: 'Philosopher', sans-serif;
-        font-style: bold;
         border-top: 1px solid black;
         border-bottom: 2px solid black;
+        
+
+
+        margin:0 auto;
+        max-width: 1100px;
         border-left: 1px solid black;
         border-right: 1px solid black;
-        /* align-items: flex-end; */
-
+        /* #header, #navBar */
       }
       
       #mysti{
-        font-size: 60px;
+        font-size: 55px;
         padding-top:10px;
       }
 
       #leftLinks{
+        margin-left: 35px;
         position: absolute;
         left: 0;
-        margin-left: 15px;
       }
 
       #rightLinks{
+        margin-right: 35px;
         position: absolute;
         right: 0;
-        margin-right: 15px;
       }
 
       .navBtn{
         background-color: #7F97A4;
-        border: 1px;
-        border-color:#272928;
-        /********** WHY WHEN I REMOVE THE ABOVE TWO LINES DOES IT DISPLAY WHAT I REMOVED???? LOL */
+        border: none;
         cursor: pointer;
         font-size: x-large;
-        font-family: 'Philosopher', sans-serif;
         text-decoration: underline;
       }
 
-      .navBtn:hover{
-        transform: translateY(-2px);
-
+      .navBtn:active{
+        transform: translateY(2px);
       }
 
       
-/* TITLE CONTAINER ******************CUPS/SWORDS/PENTACLES/WANDS/MAJOR************************************************/
-
-      .titleContainer{
-        max-width: 1100px;
-        /* min-width: 600px; */
-        background-color: #98AE92;
-        color:#E3DDDD;
-        margin:0 auto;
-        height: 60px;
-        margin-top: -22px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        padding-bottom: 10px;
-
-      }
-                  
-      .titleText{
-        background-color: #272928;
-        border-radius: 15px;
-        max-width: 1000px;
-        margin: 0 auto;
-        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
-        font-size: 1000px;
-      }
+/* TITLE CONTAINER ******************CUPS/SWORDS/PENTACLES/WANDS/MAJOR/CHOOSE CATEGORY/SPREAD/MINOR ARCANA************************************************/
 
       #titleSpacer{
         height: 50px;
-        background-color: #98AE92;
-        max-width: 1100px;
+        
+
+
+
         margin: 0 auto;
+        max-width: 1100px;
+        background-color: #98AE92;
         border-left: 1px solid black;
         border-right: 1px solid black;
+        /* #header, #navBar, #titleSpacer */
       }
 
 
+      .titleContainer{
+        color:#E3DDDD;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        
 
-/* REDIRECT BUTTON CONTAINER *********************************************************************************/
 
-      .redirectContainer{
-        background-color: #98AE92;
+
+        margin:0 auto;
         max-width: 1100px;
-        height: 60px;
-        margin: 0 auto;
+        background-color: #98AE92;
         border-left: 1px solid black;
         border-right: 1px solid black;
-        padding-bottom: 100px;
+        /* #header, #navBar, #titleSpacer .titleContainer */
       }
 
-      .redirectBtnsContainer{
-        max-width:950px;
-        height:35px;
+      .titleText{
+        background-color: #cb3844;
+        min-width: 1000px;
         margin: 0 auto;
-        background-color: #E3DDDD;
+        height: 47px;
+        
+        
+        
+        
         border-radius: 15px;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
-        padding-top:7px;
         border: 1px solid #272928;
         border-bottom: 2px solid #272928;
         border-right: 2px solid #272928;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        /* .titleText,  */
       }
-      
-      
-      #redirectBtn{
-        width:240px;
-        background-color: #323333;
-        color: #E3DDDD;
-        font-size: 26px;
-        text-decoration: none;
-        margin-top: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      
-      #redirectBtn:hover {
-        background-color: #2e2e2e;
-        transform: translateYp(-2x);
-      }
-      
-      #learnRedirectContainer{
-        height:40px;
-      }
-          
-/* RESULTS PAGES **********************PREVIEWS FOR CUPS/SWORDS/PENTACLES/WANDS/MAJOR********************************************/
 
+      #landingTitleText{
+        /* background-color: #323333; */
+        font-size: 40;
+      }
+      
+      /* RESULTS PAGES **********************PREVIEWS FOR CUPS/SWORDS/PENTACLES/WANDS/MAJOR********************************************/
+      
       .resultsPageContainer{
-        background-color: #98AE92;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin:0 auto;
-        max-width: 1100px;
-        min-height: 850px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        min-height: 50px;
         justify-content: space-evenly;    /* PLAY AROUND WITH THIS */
         padding: 20px 10px 0 10px;
+        
+        
+        
+        
+        
+        margin:0 auto;
+        max-width: 1100px;
+        background-color: #98AE92;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        /* #header, #navBar, #titleSpacer .titleContainer, .resultsPageContainer */
       }
-
+      
       .resultsCard{
-        border: 1px solid #272928;
         margin-bottom: 20px;
         padding-bottom: 10px;
-        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        background-color: #93586C;
+        
+        
+        
+        
+        border-radius: 15px;
+        border: 1px solid #272928;
         border-bottom: 2px solid #272928;
         border-right: 2px solid #272928;
-        background-color: #93586C;
-        border-radius: 15px;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        /* .titleText, .resultsCard,  */
       }
-
+      
       .resultsTextContainer{
         width: 370px;
         height: 200px;
@@ -200,7 +216,7 @@
         position: relative;
         justify-content: space-evenly;
       }
-
+      
       .cardName{
         height: 25px;
         margin: 0 auto;
@@ -208,9 +224,9 @@
         border-radius: 10px;
         font-size: 20px;
       }
-
+      /* ----------CONDENSE--------------------- */ 
+      
       #upright{
-        margin:.5vh;
         font-size: 16px;
         text-decoration: underline;
         text-align: left;
@@ -219,7 +235,7 @@
         padding-top: 2px;
         font-style: bold;
       }
-
+      
       .upResults{
         font-size: 13px;
         font-style: italic;
@@ -228,9 +244,7 @@
         padding-right: 50px;
         padding-left: 10px;
       }
-
       #reversed{
-        margin:.5vh;
         font-size: 16px;
         text-decoration: underline;
         text-align: right;
@@ -239,7 +253,7 @@
         padding-top: 2px;
         font-style: bold;
       }
-
+      
       .revResults{
         font-size: 13px;
         font-style: italic;
@@ -247,8 +261,12 @@
         text-align: right;
         padding-left: 3px;
       }
-
-      .seeFull{
+      
+      /* ------------------------------- */
+      
+      /* ----------DELETE--------------------- */
+      
+      /* .seeFull{
         background-color: #272928;
         color: #E3DDDD;
         border-radius: 10px;
@@ -257,44 +275,56 @@
         cursor: pointer;
         border: none;
         font-family: 'Philosopher', sans-serif;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
         font-size: 15px;
-      }
-
-
-/* OPTIONS PAGES ***********************SPREADS/LEARN/MINOR**********************************************************/
-
-      .optionsPageContainer{
-        background-color: #98AE92;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
+      } */
+      
+      
+      /* OPTIONS PAGES ***********************SPREADS/LEARN/MINOR**********************************************************/
+      
+      .pageContainer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        min-height: 610px;
+        padding: 70px 10px 0 10px;
+        
+        
+        
+        
+        
         margin:0 auto;
         max-width: 1100px;
-        min-height: 610px;
+        background-color: #98AE92;
         border-left: 1px solid black;
         border-right: 1px solid black;
-        padding: 70px 10px 0 10px;
       }
-
+      
+      #optionCardContainer{
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);          
+        /* min-width: 500px; */
+        background-color: blue;
+        
+      }
+      
       .optionCard {
         height: 90px;
         width: 220px;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: -40px;
+        /* margin-top: -40px; */
       }
-
+      
       .cardImg{
         width: 180px;
         height: 207px;
       }
-
-      .optionTitle{
+      
+      /* .optionTitle{
         text-decoration: underline;
         font-size: 25px;
-      }    
+      }     */
       
       
       .blurbContainer{
@@ -305,19 +335,26 @@
         width:220px;
         height: 150px;
         margin:0 auto;
-        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
-        border: 1px solid #272928;
+        
+        
+        
+        
         border-radius: 15px;
+        border: 1px solid #272928;
         border-bottom: 2px solid #272928;
         border-right: 2px solid #272928;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        /* .titleText, .resultsCard, .blurbContainer */
       }
-       
+      
       
       .optionBlurb{
         font-style: italic;
         padding:10px;
         font-size: 15px;;
       }
+      
+      /* ---------LOOK INTO THIS?---------------------- */
       
       .selectBtn{
         background-color: #272928;
@@ -346,51 +383,51 @@
       }
       
       
-/* SPREAD STYLES ***********************MAIN**********************************************************/
-
+      /* SPREAD STYLES ***********************MAIN**********************************************************/
+      
       #spreadCard{
         margin-top: 5px;
         margin-left: 40px;
         margin-right: 40px;
         /* margin-top: -20px; */
       }
-
+      
       #spreadCardImg{
         width:210px;
         height:248px;
         margin-bottom: 40px;
         margin-top: 30px;
-
+        
       }
-
+      
       #spreadPageContainer{
         min-height: 740px;
       }
-
+      
       #spreadLinkBtn{
         height: 65px;
         font-size: 20px;
         width: 200px;
         font-style: bold;
       }
-/* MINOR STYLES ***********************MINOR LANDING**********************************************************/   
+      /* MINOR STYLES ***********************MINOR LANDING**********************************************************/   
       
       #minorLinkBtn{
         width: 180px;
         font-size: 24px;
         font-style: bold;
       }
-
+      
       #minorOptionsPgContainer{
         min-height: 640px;
       }
-
+      
       #minorOptionCard{
         margin-top: -20px;
       }
-
-/* ARCANA STYLES ***********************LEARN**********************************************************/
-
+      
+      /* ARCANA STYLES ***********************LEARN**********************************************************/
+      
       #arcanaCard {
         margin-left: 80px;
         margin-right: 80px;
@@ -399,7 +436,7 @@
         /* background-color: #78128d; */
         box-shadow: none;
       }
-
+      
       .arcanaImgContainer{
         width:306px;
         height:302px;
@@ -416,55 +453,230 @@
         margin-bottom: 120px;
       }
       
-
-/* BUTTONS STYLES ***********************LEARN**********************************************************/
-
+      
+      /* BUTTONS STYLES ***********************LEARN**********************************************************/
+      
       .linkBtn{
         font-size: 28px;
         width: 280px;
         height: 42px;
         font-style: bold;
         text-decoration: underline;
-        border: 1px solid #272928;
         align-content: center;
         background-color: #E3DDDD; 
         border-radius: 10px;
         color: #272928;
         font-family: 'Philosopher', sans-serif;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
         margin-bottom: 25px;      
         cursor: pointer;
         font-style: bold;
+        
+        
+        
+        
+        
+        border-radius: 15px;
         border: 1px solid #272928;
+        border-bottom: 2px solid #272928;
+        border-right: 2px solid #272928;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        /* .titleText, .resultsCard, .blurbContainer, .linkBtn */
       }
-
+      
       .linkBtn:hover{
         background-color: #c3bdbd;
-        transform: translateY(-2px);
       }
-
-
+      
+      .linkBtn:active{
+        transform: translateY(2px);
+        
+      }
+      
+      
 /* FOOTER *****************SPACER*************************************************/
       
       #footer{
         background-color: #7F97A4;
-        max-width: 1100px;
         height: 30px;
         /* padding-top: 5px;
         padding-bottom: 35px; */
-        margin: 0 auto;
         border-top: 2px solid #272928;
+        
+        
+        
+        
+        
+        margin: 0 auto;
+        max-width: 1100px;
         border-right: 1px solid #272928;
         border-left: 1px solid #272928;
+        /* #header, #navBar, #titleSpacer .titleContainer, .resultsPageContainer, #footer */
+      }
+
+/* ACCORDION STYLES *****************RESULTS*************************************************/
+
+      #accordionContainerContainer{
+
+
+
+
+
+        margin: 0 auto;
+        max-width: 1100px;
+        background-color: #98AE92;
+        border-right: 1px solid #272928;
+        border-left: 1px solid #272928;
+        /* #header, #navBar, #titleSpacer .titleContainer, .resultsPageContainer, #footer, #accordionContainerContainer */ 
+      }
+        
+      
+      #accordionContainer{
+        background-color: #93586C;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      #accResultsCard{
+        margin: 0 auto;
+        
+        
+      }
+
+      #upRevDivContainer{
+        background-color: #E3DDDD;
+        margin: 0 auto;
+        border-radius: 15px;
+
+
+      }
+
+      
+      #upResults{
+        background-color: #E3DDDD;
+        border-radius: 15px;
+
+
+      }
+      
+
+
+      #accResultsText{
+        text-align: center;
+        font-size: 12px;
+        background-color: #E3DDDD;
+        padding: 10px;
+        border-radius: 15px;
+
+      }
+
+      #revResults{
+        background-color: #E3DDDD;
+        border-radius: 15px;
+
+      }
+
+      #descResults{
+        background-color: #E3DDDD;
+        border-radius: 15px;
+
+      }
+
+      /* #accTitle{
+        background-color: #E3DDDD;
+        border-radius: 15px;
+        text-decoration: underline;
+        font-size: 18px;
+        text-align: center;
+        background-color: #E3DDDD;
+        border-radius: 15px;
+        padding-top:10px
+      } */
+
+      /* #accResultsContainer{
+        position: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #E3DDDD;
+
+        
+      } */
+
+      
+      #testing{
+        background-color: aqua;
       }
 
 
+      #cardImg3{
+        width: 200px;
+      }
+
+
+/* REDIRECT BUTTON CONTAINER *********************************************************************************/
+
+.redirectContainer{
+  height: 60px;
+  padding-bottom: 100px;
 
 
 
 
+  margin: 0 auto;
+  max-width: 1100px;
+  background-color: #98AE92;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  /* #header, #navBar, #titleSpacer .titleContainer, .resultsPageContainer, #footer, #accordionContainerContainer, .redirectContainer */
+}
 
-          
+.redirectBtnsContainer{
+  max-width:950px;
+  height:35px;
+  margin: 0 auto;
+  background-color: #E3DDDD;
+  margin-bottom: 20px;
+  padding-top:7px;
+  
+
+
+  
+  
+  border-radius: 15px;
+  border: 1px solid #272928;
+  border-bottom: 2px solid #272928;
+  border-right: 2px solid #272928;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+/* .titleText, .resultsCard, .blurbContainer, .linkBtn, .redirectBtnsContainer */
+
+}
+
+
+
+#redirectBtn{
+  width:240px;
+  background-color: #323333;
+  color: #E3DDDD;
+  font-size: 26px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#redirectBtn:hover {
+  background-color: #2e2e2e;
+}
+
+#redirectBtn:active {
+  transform: translateY(2px);
+
+}
+
+#learnRedirectContainer{
+  height:40px;
+}
+
 
 
   /*  COLOR PALETTE

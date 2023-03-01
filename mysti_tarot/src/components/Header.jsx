@@ -1,11 +1,10 @@
 
 
-export default function Header(){
+export default function Header()
+{
 
     return(
-        <div id="header">
-                <h1></h1>
-        </div>
+        <div id="header"></div>
     )
 }
 

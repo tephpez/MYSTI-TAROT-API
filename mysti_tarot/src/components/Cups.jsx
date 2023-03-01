@@ -15,11 +15,9 @@ if (props && props.cupsCard){
     
     <div>
         <div id="titleSpacer"></div>
-
- 
         <div className="titleContainer">
             <div className="titleText">
-                <h1>CUPS</h1>
+                <h4>CUPS</h4>
             </div>
         </div>
 
