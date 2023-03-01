@@ -1,4 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom'
+import { Accordion, Card } from 'react-bootstrap'
+import AccordionBody from 'react-bootstrap/esm/AccordionBody'
+import AccordionItem from 'react-bootstrap/esm/AccordionItem'
+import AccordionHeader from 'react-bootstrap/esm/AccordionHeader'
 
 export default function MajorList(props){
 
@@ -8,7 +12,6 @@ console.log(props)
     const showMajor = (index) => {
         navigate(`${index}`)
     }
-
 
 if (props && props.majCard){
     return(
@@ -23,34 +26,34 @@ if (props && props.majCard){
             </div>
         </div>
 
-        <div className="redirectContainer">
-            <div className="redirectBtnsContainer">
-                <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
-            </div>
-         </div>
 
-        <div className="resultsPageContainer">
+        <div>
             {
                 props.majCard.map((major, index) => (
                     major.type === "major" ?
 
                 <div className="resultsCard">
-                    <div key={index} className="resultsTextContainer">
-                        <h3 className="cardName">{major.name}</h3>
-                        <h3 id="upright">UPRIGHT</h3>
-                        <h3 className="upResults">{major.meaning_up}</h3>
-                        <h3 id="reversed">REVERSED</h3>
-                        <h3 className="revResults">{major.meaning_rev}</h3>
-                    </div>
-
-                    <div className="seeFullContainer">
-                        <button className="seeFull" onClick={() => showMajor (index)}>SEE FULL DESCRIPTION</button>
-                    </div>
+                    
+                    <Accordion defaultActiveKey={index} alwaysopen>
+                        <AccordionItem eventKey={major} id="">
+                            <AccordionHeader> {major.name}</AccordionHeader>
+                            <AccordionBody>
+                                <ul>
+                                    <li>{major.meaning_up}</li>
+                                    <li>{major.meaning_rev}</li>
+                                    <li>{major.desc}</li>
+                                </ul>
+                            </AccordionBody>
+                        </AccordionItem>
+                    </Accordion>
 
                 </div>
                 : null))
             }
          </div>
+                    <div className="redirectContainer">
+                            <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
+                     </div>
        </div> 
     )
 

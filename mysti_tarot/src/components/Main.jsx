@@ -14,45 +14,42 @@ export default function Main () {
         </div>
 
 
-        <div className="optionsPageContainer"> 
+        <div className="optionsPageContainer" id="spreadPageContainer"> 
 
             <div className="optionCard" id="spreadCard">
-                <h3 className="optionTitle">ORACLE<br></br>SPREAD</h3>
+                <div>
+                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">ORACLE<br></br>SPREAD</button></Link>
+                </div>
                 <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/GFuU2jZ.png"></img>
                 
                 <div className="blurbContainer">    
                     <h5 className="optionBlurb">oracle blurb goes here</h5>
                 </div>
 
-                <div>
-                    <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
-                </div>
             </div>
 
             <div className="optionCard" id="spreadCard">
-                <h3 className="optionTitle">PULL/<br></br>PURGE</h3>
+                <div>
+                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">PULL // <br></br> PURGE</button></Link>
+                </div>
                 <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/3Pta42t.png"></img>
 
                 <div className="blurbContainer">    
                     <h5 className="optionBlurb">One card represents what you need to pull into your life, the second, what you need to purge.</h5>
                 </div>
 
-                <div>
-                    <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
-                </div>
             </div>
 
             <div className="optionCard" id="spreadCard">
-                <h3 className="optionTitle">PROBLEM/<br></br>CAUSE/SOLUTION</h3>
+                <div>
+                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
+                </div>
               <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/Axp5Ml6.png"></img>
 
                 <div className="blurbContainer">
                     <h5 className="optionBlurb">problem/cause/solution blurb goes here</h5>
                 </div>
 
-                <div>
-                    <Link to="/Spread1"><button className="selectBtn">SELECT</button></Link>
-                </div>
             </div>
         </div>
 

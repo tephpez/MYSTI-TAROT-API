@@ -23,12 +23,7 @@ if (props && props.swordsCard){
             </div>
         </div>
 
-        <div className="redirectContainer">
-            <div className="redirectBtnsContainer">
-                <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
-                <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
-            </div>
-        </div>
+
 
         <div className="resultsPageContainer">
             {
@@ -52,7 +47,10 @@ if (props && props.swordsCard){
             }
          </div>
     
-
+        <div className="redirectContainer">
+                <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
+                <Link to="/MajorList"><button className="linkBtn" id="redirectBtn">MAJOR ARCANA</button></Link>
+        </div>
        </div> 
     )
 

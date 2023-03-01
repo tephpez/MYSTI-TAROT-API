@@ -19,6 +19,7 @@ import Footer from './components/Footer'
 
 
 
+
 // import Spread1 from './components/Spread1'
 // import Spread2 from './components/Spread2'
 // import Spread3 from './components/Spread3'
@@ -30,7 +31,9 @@ import Footer from './components/Footer'
       function App() {
 
       const [majCard, setMajCard] = useState ([]);
+
       useEffect(() => {
+        
         const getMajCard = async () => {
           const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
           console.log(response.data.cards)
@@ -45,8 +48,6 @@ import Footer from './components/Footer'
 
 /// MINOR ARCANA CARD MAPPING ///
 
-/// CUPS ///
-
       const [cupsCard, setCupsCard] = useState ([]);
       useEffect(() => {
         const getCupsCard = async () => {
@@ -60,7 +61,6 @@ import Footer from './components/Footer'
 
       }, [])
 
-/// SWORDS ///
 
       const [swordsCard, setSwordsCard] = useState ([]);
       useEffect(() => {
@@ -75,7 +75,6 @@ import Footer from './components/Footer'
 
       }, [])
 
-/// PENTACLES ///
 
       const [pentaclesCard, setPentaclesCard] = useState ([]);
       useEffect(() => {
@@ -90,7 +89,6 @@ import Footer from './components/Footer'
 
       }, [])
 
-/// WANDS ///
 
       const [wandsCard, setWandsCard] = useState ([]);
       useEffect(() => {
@@ -104,6 +102,7 @@ import Footer from './components/Footer'
         getWandsCard()
 
       }, [])
+
 
   return (
     <div className="App">

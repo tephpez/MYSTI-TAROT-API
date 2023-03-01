@@ -23,12 +23,6 @@ if (props && props.cupsCard){
             </div>
         </div>
 
-        <div className="redirectContainer">
-            <div className="redirectBtnsContainer" id="resultsPageRedirect">
-                <Link to="/MajorList"><button className="redirectBtn">MAJOR ARCANA</button></Link>
-                <Link to="/MinorLanding"><button className="redirectBtn">MINOR ARCANA</button></Link>
-            </div>
-        </div>
 
         <div className="resultsPageContainer">
             {
@@ -51,6 +45,10 @@ if (props && props.cupsCard){
                 </div>
                 : null))
             }
+        </div>
+        <div className="redirectContainer">
+                <Link to="/MajorList"><button className="linkBtn" id="redirectBtn">MAJOR ARCANA</button></Link>
+                <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
         </div>
     </div> 
     )
