@@ -13,7 +13,7 @@ export default function Nav(){
                 <Link to="/"><button className="navBtn" id="spreadsBtn">spreads</button></Link>
             </div>
             <div>
-                <h1 id="mysti">MYSTI</h1>
+                <h1 id="mysti"> MYSTI </h1>
             </div>
             <div id="rightLinks">
               <Link to="/About" element={<About/>}><button className="navBtn" id="aboutBtn">about</button></Link>

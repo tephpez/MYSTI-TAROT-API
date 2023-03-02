@@ -3,11 +3,11 @@ export default function About (){
     return(
         <div>
             <div id="titleSpacer"></div>
-            <div className="titleContainer">
-                <div className="titleText">
+            <div id="titleContainer">
+                <div id="titleText">
                    <div className="pageContainer">
 
-                        <h4 id="landingTitle">ABOUT PAGE</h4>
+                        <span>ABOUT PAGE</span>
 
                     </div>
                 </div>

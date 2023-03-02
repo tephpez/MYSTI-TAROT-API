@@ -1,4 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom'
+import { Accordion } from 'react-bootstrap'
+import AccordionBody from 'react-bootstrap/esm/AccordionBody'
+import AccordionItem from 'react-bootstrap/esm/AccordionItem'
+import AccordionHeader from 'react-bootstrap/esm/AccordionHeader'
 
 export default function Wands(props){
 
@@ -17,37 +21,50 @@ if (props && props.wandsCard){
         <div id="titleSpacer"></div>
 
 
-        <div className="titleContainer">
-            <div className="titleText">
-                <h4>WANDS</h4>
+        <div id="titleContainer">
+            <div id="titleText">
+                <span>WANDS</span>
             </div>
         </div>    
 
 
-        <div className="resultsPageContainer">
-            {
+<div id="accPageContainer">
+            <div id="accContainer">            {
                 props.wandsCard.map((wands, index) => (
                     wands.suit === "wands" ?
-                    <div className="resultsCard">
-                        <div key={index} className="resultsTextContainer">
-                            <h3 className="cardName">{wands.name}</h3>
-                            <h3 id="upright">UPRIGHT</h3>
-                            <h3 className="upResults">{wands.meaning_up}</h3>
-                            <h3 id="reversed">REVERSED</h3>
-                            <h3 className="revResults">{wands.meaning_rev}</h3>
-                        </div>
-                        <div className="seeFullContainer">
-                            <button className="seeFull" onClick={() => showWands (index)}>SEE FULL DESCRIPTION</button>
-                        </div>
+                    <div id="accResultsCard">
+                             <Accordion defaultActiveKey={index} alwaysopen>
+                                <AccordionItem eventKey={wands} id="">
+                                    <AccordionHeader>{wands.name}</AccordionHeader>
+                                    <AccordionBody>
+                                    <div id="upRevDivContainer">
+                                            <div id="upRevResults">
+                                                <p id="accTitle">UPRIGHT MEANING</p>
+                                                <p id="accResultsText">{wands.meaning_up}</p>      {/* REMOVE ID AND ADJUST CSS ACCORDINGLY */}
+                                            </div>
+                                            <div id="upRevResults">
+                                                <p id="accTitle">REVERSED MEANING</p>
+                                                <p id="accResultsText">{wands.meaning_rev}</p>
+                                            </div>
+                                        </div>
+                                        <hr></hr>
+                                            <div id="descResults">
+                                                <p id="accTitle">DESCRIPTION</p>
+                                                <p id="accResultsText">{wands.desc}</p>
+                                            </div>
+                                    </AccordionBody>
+                                </AccordionItem>
+                            </Accordion>
                     </div>
                 : null))
             }
          </div>
-        <div className="redirectContainer">
+        <div id="redirectContainer">
                 <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
                 <Link to="/MajorList"><button className="linkBtn" id="redirectBtn">MAJOR ARCANA</button></Link>
          </div>
        </div> 
+       </div>
     )
 
 } else {

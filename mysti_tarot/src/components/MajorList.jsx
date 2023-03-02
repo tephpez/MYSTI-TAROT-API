@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { Accordion, Card } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 import AccordionBody from 'react-bootstrap/esm/AccordionBody'
 import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 import AccordionHeader from 'react-bootstrap/esm/AccordionHeader'
@@ -18,54 +18,53 @@ if (props && props.majCard){
         
         <div>
             <div id="titleSpacer"></div>
-            <div className="titleContainer">
-                <div className="titleText">
-                    <h4>MAJOR ARCANA</h4>
+            
+            <div id="titleContainer">
+                <div id="titleText">
+                    <span>MAJOR ARCANA</span>
                 </div>
             </div>
 
 
-            <div id="accordionContainerContainer">
-                <div id="accordionContainer">
+            <div id="accPageContainer">
+                <div id="accContainer">
                     {
                         props.majCard.map((major, index) => (
                             major.type === "major" ?
 
-                        <div className="accResultsCard">
+                        <div id="accResultsCard">
                             
                             <Accordion defaultActiveKey={index} alwaysopen>
                                 <AccordionItem eventKey={major} id="">
-                                        <AccordionHeader>{major.name}</AccordionHeader>
-                                        <AccordionBody>
-                                            <div id="upRevDivContainer">
-                                                <div id="upResults">
-                                                    <p id="accTitle">UPRIGHT MEANING</p>
-                                                    <p id="accResultsText">{major.meaning_up}</p>      {/* REMOVE ID AND ADJUST CSS ACCORDINGLY */}
-                                                </div>
-                                                <div id="revResults">
-                                                    <p id="accTitle">REVERSED MEANING</p>
-                                                    <p id="accResultsText">{major.meaning_rev}</p>
-                                                </div>
+                                    <AccordionHeader>{major.name}</AccordionHeader>
+                                    <AccordionBody>
+                                        <div id="upRevDivContainer">
+                                            <div id="upRevResults">
+                                                <p id="accTitle">UPRIGHT MEANING</p>
+                                                <p id="accResultsText">{major.meaning_up}</p>      {/* REMOVE ID AND ADJUST CSS ACCORDINGLY */}
                                             </div>
-                                            <hr></hr>
-                                            {/* <div id="descResultsContainer"> */}
-                                                <div id="descResults">
-                                                    <p id="accTitle">DESCRIPTION</p>
-                                                    <p id="accResultsText">{major.desc}</p>
-                                                </div>
-                                            {/* </div> */}
-                                        </AccordionBody>
+                                            <div id="upRevResults">
+                                                <p id="accTitle">REVERSED MEANING</p>
+                                                <p id="accResultsText">{major.meaning_rev}</p>
+                                            </div>
+                                        </div>
+                                        <hr></hr>
+                                            <div id="descResults">
+                                                <p id="accTitle">DESCRIPTION</p>
+                                                <p id="accResultsText">{major.desc}</p>
+                                            </div>
+                                    </AccordionBody>
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                : null))
-                }
-                </div>
-                <div className="redirectContainer">
-                    <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
-                </div>
-            </div> 
-        </div>
+                    : null))
+                    }
+                    </div>
+                    <div id="redirectContainer">
+                        <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
+                    </div>
+                </div> 
+            </div>
     )
 
 } else {

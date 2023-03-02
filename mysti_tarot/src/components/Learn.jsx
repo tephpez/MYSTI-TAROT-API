@@ -8,45 +8,47 @@ export default function Learn(){
     return(
         <div>
             <div id="titleSpacer"></div>
-            <div className="titleContainer">
-                <div className="titleText">
-                    <h4>CHOOSE A CATEGORY</h4>
+
+            <div id="titleContainer">
+                <div id="titleText">
+                    <span>CHOOSE A CATEGORY</span>
                 </div>   
             </div>    
 
             <div className="pageContainer"> 
-                <div id="optionCardContainer">
-                    <div className="optionCard" id="arcanaCard">
-                        <div>
-                            <Link to="/MajorList" element={<MajorList/>}><button className="linkBtn">MAJOR ARCANA</button></Link>
-                        </div>
 
-                        <div className="arcanaImgContainer">
-                            <img id="arcanaCardImg" src="https://i.imgur.com/7jS1bC5.png"></img>
-                        </div>
+                <div className="optionCard" id="learnOptionCard">
+                    <div>
+                        <Link to="/MajorList"><button className="linkBtn" id="mainOptionBtn">MAJOR<br></br> ARCANA</button></Link>
                     </div>
+
+                    <div id="imgCircle">
+                        <img className="cardImg" id="learnCardImg" src="https://i.imgur.com/1NWmH5R.png"></img>
+                    </div>
+
                 
-                    <div className="blurbContainer" id="arcanaBlurbContainer">
-                        <h5 className="optionBlurb">These cards represent life's karmic and spiritual lessons. 
-                                                    They represent a path to spiritual self-awareness and depict the various stages we encounter as we search for greater meaning and understanding. <br></br>
-                                                    In this way, the Major Arcana cards hold deeply meaningful lessons on a soul level.</h5>
-                    </div>
-
-
-                </div>
-                <div>
-                    <div className="optionCard" id="arcanaCard">
-                        <div>
-                            <Link to="/MinorLanding" element={<MinorLanding/>}><button className="linkBtn">MINOR ARCANA</button></Link>                         </div>
-                        <div id="arcanaImgContainer">
-                            <img id="arcanaCardImg" src="https://i.imgur.com/IZHv1yy.png"></img>
-                        </div>
-                    </div>
-
-                    <div className="blurbContainer" id="arcanaBlurbContainer">
-                        <h5 className="optionBlurb">These cards reflect the trials and tribulations that we experience on a daily basis. These Tarot cards highlight the more practical aspects of life and can refer to current issues that have a temporary or minor influence.</h5>
+                    <div className="blurbContainer">
+                        <h5 className="optionBlurb">These cards represent a path to spiritual self-awareness and depict the various stages we encounter as we search for greater meaning and understanding.</h5>
                     </div>
                 </div>
+        
+                <div className="optionCard" id="learnOptionCard">
+
+                    <div>
+                        <Link to="/MinorLanding"><button className="linkBtn" id="mainOptionBtn">MINOR<br></br> ARCANA</button></Link>                         
+                    </div>
+
+                    <div id="imgCircle">
+                        <img className="cardImg" id="learnCardImg" src="https://i.imgur.com/Gh5ANXh.png"></img>
+                    </div>
+
+                    <div className="blurbContainer">
+                        <h5 className="optionBlurb">These Tarot cards highlight the more practical aspects of life and can refer to current issues that have a temporary or minor influence.</h5>
+                    </div>
+
+                </div>
+            </div>
+            <div id="redirectContainer">
             </div>
         </div>
 
@@ -55,5 +57,4 @@ export default function Learn(){
 
 /////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
 /////  STYLE ISSUES 
-/////  - LEARN - BLURB ALIGNMENT
 

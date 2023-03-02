@@ -6,44 +6,53 @@ export default function Main () {
 
     <div>
         <div id="titleSpacer"></div>
-        <div className="titleContainer">
-            <div className="titleText" id="landingTitleText">
-                <h4>CHOOSE YOUR SPREAD</h4>
+
+        <div id="titleContainer">
+            <div id="titleText">
+                <span>CHOOSE YOUR SPREAD</span>
             </div>
         </div>
 
 
-        <div className="pageContainer" id="landingPageContainer"> 
-
-            <div className="optionCard" id="spreadCard">
+        <div className="pageContainer"> 
+            <div className="optionCard">
                 <div>
-                    <Link to="/Spread1"><button className="linkBtn" id="spreadLinkBtn">ORACLE<br></br>SPREAD</button></Link>
+                    <Link to="/Spread1"><button className="linkBtn" id="mainOptionBtn">ORACLE<br></br>SPREAD</button></Link>
                 </div>
-                <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/GFuU2jZ.png"></img>
+
+                <div id="imgCircle">
+                    <img className="cardImg" id="mainCardImg" src="https://i.imgur.com/asHuyas.png"></img>
+                </div>
                 
                 <div className="blurbContainer">    
                     <h5 className="optionBlurb">oracle blurb goes here</h5>
                 </div>
-
             </div>
 
-            <div className="optionCard" id="spreadCard">
+            <div className="optionCard">
+
                 <div>
-                    <Link to="/Spread2"><button className="linkBtn" id="spreadLinkBtn">PULL // <br></br> PURGE</button></Link>
+                    <Link to="/Spread2"><button className="linkBtn" id="mainOptionBtn"> PULL //<br></br> PURGE </button></Link>
                 </div>
-                <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/3Pta42t.png"></img>
+
+                <div id="imgCircle">
+                    <img className="cardImg" id="mainCardImg" src="https://i.imgur.com/vZ9BoY0.png"></img>
+                </div>
 
                 <div className="blurbContainer">    
                     <h5 className="optionBlurb">One card represents what you need to pull into your life, the second, what you need to purge.</h5>
                 </div>
-
             </div>
 
-            <div className="optionCard" id="spreadCard">
+            <div className="optionCard">
+
                 <div>
-                    <Link to="/Spread3"><button className="linkBtn" id="spreadLinkBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
+                    <Link to="/Spread3"><button className="linkBtn" id="mainOptionBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
                 </div>
-              <img className="cardImg" id="spreadCardImg" src="https://i.imgur.com/Axp5Ml6.png"></img>
+                
+                <div id="imgCircle">
+                    <img className="cardImg" id="mainCardImg" src="https://i.imgur.com/uo0BBW6.png"></img>
+                </div>
 
                 <div className="blurbContainer">
                     <h5 className="optionBlurb">problem/cause/solution blurb goes here</h5>
@@ -51,19 +60,20 @@ export default function Main () {
 
             </div>
         </div>
+        
+        <div id="redirectContainer">
+            <h1></h1>
+        </div>
 
-        {/* <div className="redirectContainer"><h1> </h1></div> */}
     </div>
 
 
     )
 }
 
-// //////////////////////////////////////////////////////////////////////////////////////////////////////
-{/* // <Link to="/Spread1"><button>select reading</button></Link>
-// <Link to="/Spread2"><button>select reading</button></Link>
-// <Link to="/Spread3"><button>select reading</button></Link> */}
-{/* 
+/////  CODE  /////////////////////////////////////////////////////////////////////////////////////////////////
+/////  STYLE  /////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 // WHY AREN'T MY IMAGES WORKING? WRONG PATH? */}
 {/* <img src="../assets/CARD2.png"></img><br></br> */}
