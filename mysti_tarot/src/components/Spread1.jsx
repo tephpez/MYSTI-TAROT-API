@@ -6,8 +6,11 @@ export default function Spread1(){
     
     
     return(
+        
         <div>
-
+            <div>
+                <WelcomeModal/>
+            </div>
             <div id="titleSpacer"></div>
             <div id="titleContainer">
                 <div id="titleText">
@@ -16,9 +19,7 @@ export default function Spread1(){
             </div>
 
             <div className="pageContainer" id="spread1PageContainer"> 
-    <div>
-        <WelcomeModal/>
-    </div>
+
 
                 <div className="divStack">
                     <div className="optionCard">

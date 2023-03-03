@@ -32,6 +32,7 @@ if (props && props.cupsCard){
                     props.cupsCard.map((cups, index) => (
                         cups.suit === "cups" ?
 
+
                         <div id="accResultsCard">
                         <Accordion defaultActiveKey={index} alwaysopen>
                            <AccordionItem eventKey={cups} id="">

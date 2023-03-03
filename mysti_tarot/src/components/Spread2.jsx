@@ -8,6 +8,9 @@ export default function Spread2(){
 
     return(
         <div>
+            <div>
+                <WelcomeModal/>
+            </div>
             <div id="titleSpacer"></div>
             <div id="titleContainer">
                 <div id="titleText">

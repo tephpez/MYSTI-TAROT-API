@@ -22,10 +22,6 @@ import Spread3 from './components/Spread3'
 import WelcomeModal from './components/WelcomeModal';
 
 
-/// MODAL CODE ///
-
-
-
 
 
 
@@ -33,13 +29,14 @@ import WelcomeModal from './components/WelcomeModal';
 
 
       function App() {
+        const url = "https://tarot-api.onrender.com/api/v1/cards"
 
       const [majCard, setMajCard] = useState ([]);
 
       useEffect(() => {
         
         const getMajCard = async () => {
-          const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
+          const response = await axios.get(url)
           console.log(response.data.cards)
 
           setMajCard(response.data.cards)
@@ -55,7 +52,7 @@ import WelcomeModal from './components/WelcomeModal';
       const [cupsCard, setCupsCard] = useState ([]);
       useEffect(() => {
         const getCupsCard = async () => {
-          const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
+          const response = await axios.get(url)
           console.log(response.data.cards)
 
           setCupsCard(response.data.cards)
@@ -69,7 +66,7 @@ import WelcomeModal from './components/WelcomeModal';
       const [swordsCard, setSwordsCard] = useState ([]);
       useEffect(() => {
         const getSwordsCard = async () => {
-          const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
+          const response = await axios.get(url)
           console.log(response.data.cards)
 
           setSwordsCard(response.data.cards)
@@ -83,7 +80,7 @@ import WelcomeModal from './components/WelcomeModal';
       const [pentaclesCard, setPentaclesCard] = useState ([]);
       useEffect(() => {
         const getPentaclesCard = async () => {
-          const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
+          const response = await axios.get(url)
           console.log(response.data.cards)
 
           setPentaclesCard(response.data.cards)
@@ -97,7 +94,7 @@ import WelcomeModal from './components/WelcomeModal';
       const [wandsCard, setWandsCard] = useState ([]);
       useEffect(() => {
         const getWandsCard = async () => {
-          const response = await axios.get(`https://tarot-api.onrender.com/api/v1/cards`)
+          const response = await axios.get(url)
           console.log(response.data.cards)
 
           setWandsCard(response.data.cards)
