@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
+
 export default function Main () {
+
+    function pickRandom() {
+        const pages = ['/Spread1', '/Spread2', '/Spread3'];
+        const randomIndex = Math.floor(Math.random() * pages.length);
+        const randomPage = pages[randomIndex];
+        window.location.href = randomPage;  // THIS SEEMS TO BE THE ISSUE???
+    }
 
     return (
 
@@ -17,7 +25,7 @@ export default function Main () {
         <div className="pageContainer"> 
             <div className="optionCard">
                 <div>
-                    <Link to="/Spread1"><button className="linkBtn" id="mainOptionBtn">ORACLE<br></br>SPREAD</button></Link>
+                    <Link to="/Spread1"><button className="linkBtn" id="mainOptionBtn">‎ • ‎ ORACLE ‎ • ‎ <br></br>SPREAD</button></Link>
                 </div>
 
                 <div id="imgCircle">
@@ -32,7 +40,7 @@ export default function Main () {
             <div className="optionCard">
 
                 <div>
-                    <Link to="/Spread2"><button className="linkBtn" id="mainOptionBtn"> PULL //<br></br> PURGE </button></Link>
+                    <Link to="/Spread2"><button className="linkBtn" id="mainOptionBtn"> PULL ‎  •<br></br>  • ‎   PURGE </button></Link>
                 </div>
 
                 <div id="imgCircle">
@@ -47,7 +55,7 @@ export default function Main () {
             <div className="optionCard">
 
                 <div>
-                    <Link to="/Spread3"><button className="linkBtn" id="mainOptionBtn">PROBLEM //<br></br>CAUSE // SOLUTION</button></Link>
+                    <Link to="/Spread3"><button className="linkBtn" id="mainOptionBtn"> • ‎  PROBLEM ‎  •<br></br>CAUSE ‎ • ‎  SOLUTION</button></Link>
                 </div>
                 
                 <div id="imgCircle">
@@ -62,8 +70,8 @@ export default function Main () {
         </div>
         
         <div id="redirectContainer">
-            <h1></h1>
-        </div>
+            <button onClick={pickRandom} className="linkBtn" id="redirectBtn">RANDOM</button>
+        </div> 
 
     </div>
 

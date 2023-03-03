@@ -7,7 +7,7 @@ export default function Learn(){
 
     return(
         <div>
-            <div id="titleSpacer"></div>
+            <div id="titleSpacer" style={{ backgroundColor:"#98AE92"}}></div>
 
             <div id="titleContainer">
                 <div id="titleText">

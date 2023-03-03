@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* APP ******************************************************************/
+img{
+  padding:0;
+  margin:0;
 
+}
       .App {
         background-color: #E3DDDD;
         font-family: 'Philosopher', sans-serif;
@@ -11,49 +15,40 @@
 
                                     /* PAGE CONTAINER FORMATTING */
 
-                                    /* #header, 
-                                    #navBar, 
-                                    #titleSpacer 
-                                    .titleContainer, 
-                                    .resultsPageContainer, 
-                                    #footer, 
-                                    #accPageContainer, 
-                                    .redirectContainer {
-                                            margin: 0 auto;
-                                            max-width: 1300px;
-                                            background-color: #98AE92;
-                                            border-left: 1px solid black;
-                                            border-right: 1px solid black;
-                                    } */
+            #header,          
+            #navBar, 
+            #titleSpacer,        /**/
+            #titleContainer,    /**/
+            #footer, 
+            .pageContainer,     
+            #accPageContainer,  
+            .redirectContainer /**/ {
+                    margin: 0 auto;
+                    max-width: 1100px;
+                    min-width:550px;
+                    background-color: #98AE92;
+                    border-left: 1px solid #272928;
+                    border-right: 1px solid #272928;
+            }
 
+/* FLOATING CONTAINER FORMATTING */
 
-                                    /* FLOATING CONTAINER FORMATTING */
-
-                                    /* .titleText, 
-                                    .resultsCard, 
-                                    .blurbContainer, 
-                                    .linkBtn, 
-                                    .redirectBtnsContainer{
-                                      border-radius: 15px;
-                                      border: 1px solid #272928;
-                                      border-bottom: 2px solid #272928;
-                                      border-right: 2px solid #272928;
-                                      box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
-                                    } */
+        #titleText, 
+        .blurbContainer, 
+        .linkBtn, 
+        #accContainer, {
+          border-radius: 15px;
+          border: 1px solid #272928;
+          border-bottom: 2px solid #272928;
+          border-right: 2px solid #272928;
+          box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        }
 
 
 /* HEADER *****************SPACER*************************************************/
 
       #header{
         height: 70px;
-        padding-top: 5px;   
-  /**************************** WHY IS THIS PADDING NECESSARY? */
-                                      margin: 0 auto;
-                                      max-width: 1300px;
-                                      min-width:550px;
-                                      background-color: #98AE92;
-                                      border-left: 1px solid black;
-                                      border-right: 1px solid black;
       }
          
           
@@ -64,26 +59,23 @@
         background-color: #7F97A4;
         display: flex;
         flex-direction: row;
-        height: 57px;
+        height: 50px;
         justify-content: center;
         align-items: center;
         position: relative;
         border-top: 1px solid black;
         border-bottom: 2px solid black;
-                                      margin:0 auto;
-                                      max-width: 1300px;
-                                      min-width:550px;
-                                      border-left: 1px solid black;
-                                      border-right: 1px solid black;
       }
 
       #mysti{
-        font-size: 55px;
-        padding-top:10px;
+        font-size: 50px;
+        padding-top:6px;
       }
       
+      /********************** WHY CAN'T I CONDENSE LEFT & RIGHT LINKS */
+
       #leftLinks{
-        margin-left: 30px;
+        margin-left: 35px;
         position: absolute;
         left: 0;
       }
@@ -96,13 +88,12 @@
 
 
 
-/********************** WHY CAN'T I CONDENSE LEFT & RIGHT LINKS */
 
       .navBtn{
         background-color: #7F97A4;
         border: none;
         cursor: pointer;
-        font-size: x-large;
+        font-size: 20px;
         text-decoration: underline;
       }
 
@@ -114,40 +105,25 @@
 
 /* TITLE CONTAINER ******************CUPS/SWORDS/PENTACLES/WANDS/MAJOR/CHOOSE CATEGORY/SPREAD/MINOR ARCANA************************************************/
 
-#titleSpacer{
+      #titleSpacer{
+        display: flex;
+        align-items: center;
         height: 50px;
-                                      margin: 0 auto;
-                                      max-width: 1300px;
-                                      min-width:550px;
-                                      background-color: #98AE92;
-                                      border-left: 1px solid black;
-                                      border-right: 1px solid black;
       }
 
       #titleContainer{
         display: flex;
+        align-items: center;
         justify-content: center;
-                                      margin:0 auto;
-                                      max-width: 1300px;
-                                      min-width:550px;
-                                      background-color: #98AE92;
-                                      border-left: 1px solid black;
-                                      border-right: 1px solid black;
+        height: 50px;
       }
 
       #titleText{
         background-color: #272928;
         color:#E3DDDD;
-        min-width:550px;
-        width:1160px;
-        font-size: x-large;
-        margin-left: 30px;
-        margin-right: 30px;
-                                      border-radius: 15px;
-                                      border: 1px solid #272928;
-                                      border-bottom: 2px solid #272928;
-                                      border-right: 2px solid #272928;
-                                      box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        width:950px;
+        min-width:40vw;
+        font-size: 23px;
       }
 
 
@@ -159,75 +135,85 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        min-height: 632px;
+        min-height: 650px;
         padding-top: 65px;
-                                      margin:0 auto;
-                                      max-width: 1300px;
-                                      min-width: 550px;
-                                      background-color:darkmagenta;
-                                      border-left: 1px solid black;
-                                      border-right: 1px solid black;
       }
 
       .optionCard{ 
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 15px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 15px;         /* THIS ADDS CUSHION BETWEEN OPTION CARDS WHEN STACKING */
         padding: 10px;
-        padding-bottom: 20px;
-        background-color: blue;
+        padding-bottom: 25px;
+        height: 530px;
       
-                                      border-bottom: 2px solid #272928;
-                                      border-right: 2px solid #272928;
+                                      border-bottom: 1px solid #272928;
+                                      border-right: 1px solid #272928;
                                       box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
       }
 
       .blurbContainer{
         background-color: #cb3844;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width:220px;
+        width:190px;
         height: 150px;
         margin:0 auto;
-                                      border-radius: 15px;
-                                      border: 1px solid #272928;
-                                      border-bottom: 2px solid #272928;
-                                      border-right: 2px solid #272928;
-                                      box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
       }
       
       .optionBlurb{
         font-style: italic;
         padding:10px;
-        font-size: 15px;;
+        font-size: 12px;;
       }
       
+      #cardBlurb3{
+        min-width: 250px;
+        margin: 10px;
+      }
 
+       #cardBlurb2-1{
+        height: 250px;
+        align-self: end;
+        margin-bottom: 5vh;
+        margin-left: 1.5vw;
+      }
+
+      #cardBlurb2-2{
+        height: 250px;
+        align-self: start;
+        margin-top:5vh;
+        margin-right: 1.5vw;
+
+      } 
 
 /* MAIN STYLES ***********************SPREAD SELECTION/LANDING**********************************************************/
 
       #imgCircle{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         background-color: #93586C;
         border: 2px solid #272928;
-        margin-bottom: 30px;
+        margin-bottom: 4.7vh;
+        margin-top: 2vh;
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+
       }
 
       #mainCardImg{
         width:250px;
         height:372px;
-        transform: scale(.7);
-        margin-top: -60px;
+        transform: scale(.61);
+        margin-top: -85px;
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        justify-self: center;
       }
 
       #mainOptionBtn{
-        height: 65px;
-        font-size: 20px;
+        height: 56px;
+        font-size: 16px;
+        width: 180px;
       }
       
       
@@ -278,11 +264,6 @@
         margin-bottom: 25px;      
         cursor: pointer;
         width: 200px;
-                                                border-radius: 15px;
-                                                border: 1px solid #272928;
-                                                border-bottom: 2px solid #272928;
-                                                border-right: 2px solid #272928;
-                                                box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
       }
       
       .linkBtn:hover{
@@ -302,12 +283,8 @@
         height: 40px;
         border-top: 2px solid #272928;
         overflow: hidden;
-        display: grid;
-                                                margin: 0 auto;
-                                                max-width: 1300px;
-                                                min-width: 550px;
-                                                border-right: 1px solid #272928;
-                                                border-left: 1px solid #272928;
+        display: flex; 
+        align-items:center;                                              
       }
 
 /* ACCORDION STYLES *****************RESULTS*************************************************/
@@ -315,12 +292,6 @@
       #accPageContainer{
         padding-top:30px;
         padding-bottom: 30px;
-                                                margin  : 0 auto;
-                                                max-width: 1300px;
-                                                min-width:550px;
-                                                background-color: #98AE92;
-                                                border-right: 1px solid #272928;
-                                                border-left: 1px solid #272928;
       }
       
       #accContainer{
@@ -329,7 +300,8 @@
         min-width:300px;
         margin: 0 auto;
         padding: 40px;
-        border-radius: 15px;
+        margin-bottom: 10px;
+        
       }
 
       #upRevDivContainer{
@@ -344,6 +316,7 @@
         padding-top:5px;
         padding-bottom: 5px;
         margin: 0 auto;
+        /* text-decoration: underline; */
       }
 
       #upRevResults{
@@ -355,13 +328,15 @@
         padding-top: 15px;
       }
       
-
+      #accTitle{
+        text-decoration: underline;
+      }
 
       #accResultsText{
         text-align: center;
         font-size: 12px;
         background-color: #E3DDDD;
-        padding: 10px;
+        padding: 8px;
         border-radius: 15px;
 
       }
@@ -376,10 +351,12 @@
       }
 
 
-      #cardImg3{
+      /* #cardImg1{
         width:250px;
         height:372px;
-        transform: scale(.77);      }
+        transform: scale(.77);      }*/
+
+
 
 
 /* REDIRECT BUTTON CONTAINER *********************************************************************************/
@@ -389,7 +366,7 @@
   justify-content: center;
 
                                         margin: 0 auto;
-                                        max-width: 1300px;
+                                        max-width: 1100px;
                                         min-width: 550px;
                                         border-right: 1px solid #272928;
                                         border-left: 1px solid #272928;
@@ -419,37 +396,119 @@
 
 }
 
-/*.marquee {
+.marquee {
   height: 20px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  margin:0 auto;
 }
 
 .marqueeContent{
   display:inline-block;
-  padding: 10px;
   animation: marquee 30s linear infinite;
-  /* transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 @keyframes marquee{
-  0%{transform: translateX(100%);}
+  0%{transform: translateX(0%);}
   100%{transform: translateX(-100%);}
-}*/
-
-
-
-#imgSquare{
-
 }
 
-.divStack{
-  display:inline-block;
-  /* flex-wrap:nowrap;
-  flex-direction: in; */
 
+
+.divStackCards3{
+  display: flex;  
+  flex-direction: row;
+  min-width:80%;
+  max-width:100%;
+  justify-content: space-evenly;
 }
+
+.divStackBlurbs3{
+  display: flex;  
+  flex-direction: row;
+  max-width: 80%;
+  min-width:100%;
+  justify-content: space-evenly;
+}
+
+/* 3CARD STYLES *********/
+
 #spread3PageContainer{
 
+} 
+
+
+.optionCard3{
+  justify-content: center;
+  background-color: #cb3844;
+  width:250px;
+}
+
+#cardImg3{
+  width:250px;
+  height:372px;
+  transform: scale(.8);
+  margin: 0 auto;
+  padding:0;
+}
+
+#cardImg2{
+  width:250px;
+  height:372px;
+  transform: scale(.87);
+  margin: 0 auto;
+  margin-right:5px;
+  margin-left:5px;
+} 
+
+/* #spread2PageContainer{
+justify-content: center;
+
+} */
+
+
+.divStack2{
+  background-color: #98AE92;
+  display: flex;
+  align-items: center;
+  /* margin:10px; */
+  max-height:400px;
+  width:500px;
+  padding:10px;
+  margin: 10px;
+
+
+
+
+}
+
+.modal{
+  background-color:rgba(0, 0, 0, 0.5);
+  width: 100vw;
+
+
+}
+
+
+.modalContent{
+  background-color: #7F97A4;
+  width:300px;
+  height:300px;
+}
+
+
+#divStackContainer{
+  border-bottom: 1px solid #272928;
+  border-right: 1px solid #272928;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width:fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
 }

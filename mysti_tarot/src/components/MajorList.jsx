@@ -60,10 +60,10 @@ if (props && props.majCard){
                     : null))
                     }
                     </div>
-                    <div id="redirectContainer">
-                        <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
-                    </div>
                 </div> 
+                <div id="redirectContainer">
+                    <Link to="/MinorLanding"><button className="linkBtn" id="redirectBtn">MINOR ARCANA</button></Link>
+                </div>
             </div>
     )
 

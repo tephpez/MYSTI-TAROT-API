@@ -16,16 +16,21 @@ import Swords from './components/Swords'
 import Pentacles from './components/Pentacles'
 import Wands from './components/Wands'
 import Footer from './components/Footer'
-
-
-
-
-// import Spread1 from './components/Spread1'
-// import Spread2 from './components/Spread2'
+import Spread1 from './components/Spread1'
+import Spread2 from './components/Spread2'
 import Spread3 from './components/Spread3'
+import WelcomeModal from './components/WelcomeModal';
+
+
+/// MODAL CODE ///
+
+
+
+
 
 
 /// MAJOR ARCANA CARD MAPPING ///
+
 
       function App() {
 
@@ -103,9 +108,14 @@ import Spread3 from './components/Spread3'
       }, [])
 
 
+///  
+
+
   return (
     <div className="App">
       <div>
+
+
         <Header/>
         <Nav/>
           <Routes>
@@ -120,9 +130,13 @@ import Spread3 from './components/Spread3'
             <Route path ="/Pentacles" element={<Pentacles pentaclesCard={pentaclesCard}/>}></Route>
             <Route path ="/Swords" element={<Swords swordsCard={swordsCard}/>}></Route>
             <Route path ="/Wands" element={<Wands wandsCard={wandsCard}/>}></Route>
+            <Route path="/Spread1" element={<Spread1/>}></Route>
+            <Route path="/Spread2" element={<Spread2/>}></Route>
             <Route path="/Spread3" element={<Spread3/>}></Route>
+            <Route path="/WelcomeModal" element={<WelcomeModal/>}></Route>                    {/* DO I NEED THIS!?!?!?!?! */}
           </Routes>
         </div>
+
         <div>
           <Footer/>
         </div>
